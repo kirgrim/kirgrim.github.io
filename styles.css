@@ -33,6 +33,7 @@
 }
 html {
   scroll-padding-top: 112px;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -427,8 +428,57 @@ button:active {
   margin-top: var(--spacing-600);
   min-height: 680px;
 }
-.hero-copy .eyebrow {
+.hero-identity {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
   margin-bottom: var(--spacing-300);
+}
+.hero-avatar {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 9999px;
+}
+.hero-role {
+  margin-top: var(--spacing-50);
+  color: var(--muted);
+}
+.hero-identity,
+.hero h1,
+.hero-description,
+.hero-copy > .button,
+.hero-proof,
+.engineering-visual {
+  animation: hero-enter 700ms var(--motion) both;
+}
+.hero h1 {
+  animation-delay: 60ms;
+}
+.hero-description {
+  animation-delay: 120ms;
+}
+.hero-copy > .button {
+  animation-delay: 180ms;
+}
+.hero-proof {
+  animation-delay: 240ms;
+}
+.engineering-visual {
+  --entrance-rotation: 1deg;
+  animation-delay: 120ms;
+}
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) rotate(var(--entrance-rotation, 0deg));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--entrance-rotation, 0deg));
+  }
 }
 .hero h1 {
   max-width: 680px;
@@ -856,6 +906,12 @@ details[open] .faq-toggle::after {
     opacity 700ms var(--motion),
     transform 700ms var(--motion);
 }
+.strength-card:nth-child(2) {
+  transition-delay: 60ms;
+}
+.strength-card:nth-child(3) {
+  transition-delay: 120ms;
+}
 .document-shell {
   max-width: 800px;
   margin: var(--spacing-800) auto;
@@ -977,10 +1033,9 @@ details[open] .faq-toggle::after {
     margin-top: var(--spacing-600);
     min-height: 0;
   }
-  .hero-copy > .eyebrow {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.06em;
+  .hero-avatar {
+    width: 64px;
+    height: 64px;
   }
   .hero h1 {
     max-width: 600px;
