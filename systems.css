@@ -1,0 +1,432 @@
+.architecture-section {
+  background: #ebece5;
+}
+.architecture-carousel,
+.architecture-slide,
+.architecture-copy,
+.experience-body > *,
+.career-roles {
+  min-width: 0;
+}
+.architecture-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-300);
+  margin-bottom: var(--spacing-300);
+}
+.architecture-controls[hidden],
+.motion-toggle[hidden] {
+  display: none;
+}
+.architecture-tabs,
+.carousel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-75);
+}
+.architecture-tab,
+.carousel-prev,
+.carousel-next,
+.motion-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--spacing-100) var(--spacing-200);
+  border: 1px solid #c9cec1;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  transition:
+    background-color 300ms var(--motion),
+    border-color 300ms var(--motion),
+    color 300ms var(--motion);
+}
+.architecture-tab:hover,
+.carousel-prev:hover,
+.carousel-next:hover,
+.motion-toggle:hover {
+  background: var(--paper);
+  border-color: var(--ink);
+}
+.architecture-tab[aria-current] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.carousel-prev,
+.carousel-next {
+  width: 44px;
+  padding: 0;
+  flex-shrink: 0;
+}
+.carousel-prev .icon {
+  transform: rotate(180deg);
+}
+.carousel-prev:disabled,
+.carousel-next:disabled {
+  opacity: 0.35;
+  cursor: default;
+  background: transparent;
+  border-color: #c9cec1;
+}
+.carousel-status {
+  min-width: 48px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 20px;
+}
+.motion-toggle {
+  margin-left: var(--spacing-75);
+}
+.architecture-track {
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-color: #b9bfb0 transparent;
+  scrollbar-width: thin;
+  border-radius: 24px;
+}
+.architecture-track:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.architecture-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.2fr);
+  flex: 0 0 100%;
+  align-items: center;
+  gap: var(--spacing-400);
+  padding: var(--spacing-400);
+  border: 1px solid #d1d6c9;
+  border-radius: 24px;
+  background: var(--paper);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.architecture-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200);
+}
+.architecture-copy > .body-3 {
+  color: var(--muted);
+}
+.architecture-copy .text-link {
+  margin-top: var(--spacing-100);
+}
+.diagram-panel {
+  margin: 0;
+  padding: var(--spacing-200);
+  border: 1px solid #3b4650;
+  border-radius: 16px;
+  background: #181818;
+  color: #f8fafc;
+  min-width: 0;
+}
+.system-map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.diagram-panel figcaption {
+  margin-top: var(--spacing-200);
+  padding-top: var(--spacing-200);
+  border-top: 1px solid #3b4650;
+  color: #b8c4d1;
+}
+.map-edge {
+  fill: none;
+  stroke: #7b8c9b;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.map-async {
+  stroke-dasharray: 6 5;
+}
+.map-client {
+  color: #22d3ee;
+  --node-fill: #14323a;
+}
+.map-service {
+  color: #34d399;
+  --node-fill: #15382d;
+}
+.map-store {
+  color: #a78bfa;
+  --node-fill: #302741;
+}
+.map-queue {
+  color: #fb923c;
+  --node-fill: #3b291d;
+}
+.map-cloud {
+  color: #fbbf24;
+  --node-fill: #3d3219;
+}
+.map-external {
+  color: #cbd5e1;
+  --node-fill: #29313b;
+}
+.map-box {
+  fill: var(--node-fill, #29313b);
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+.map-label {
+  fill: #f8fafc;
+  font-size: 16px;
+  font-weight: 500;
+}
+.map-sublabel,
+.map-boundary-label {
+  fill: #b8c4d1;
+  font-size: 12px;
+}
+.map-boundary {
+  fill: #ffffff03;
+  stroke: #596876;
+  stroke-width: 1;
+  stroke-dasharray: 6 5;
+}
+.map-packet {
+  fill: #fbbf24;
+  opacity: 0;
+  animation: packet-travel 2.8s var(--motion) infinite;
+  animation-delay: var(--flow-delay, 0s);
+  animation-play-state: var(--diagram-motion, paused);
+}
+.diagrams-ready {
+  --diagram-motion: running;
+}
+.diagrams-paused {
+  --diagram-motion: paused;
+}
+@keyframes packet-travel {
+  0%,
+  10% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  20%,
+  70% {
+    opacity: 0.9;
+  }
+  85%,
+  100% {
+    opacity: 0;
+    transform: translate(var(--flow-x, 0px), var(--flow-y, 0px));
+  }
+}
+.experience {
+  display: block;
+}
+.experience-list,
+.career-roles {
+  display: grid;
+  gap: var(--spacing-200);
+}
+.experience-entry,
+.career-role {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+.experience-summary,
+.career-role > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-300);
+  padding: var(--spacing-300) var(--spacing-400);
+  list-style: none;
+  cursor: pointer;
+}
+.experience-summary::-webkit-details-marker,
+.career-role > summary::-webkit-details-marker {
+  display: none;
+}
+.experience-summary:hover,
+.career-role > summary:hover {
+  color: var(--accent);
+}
+.employer-meta > .caption-2,
+.career-role > summary .caption-2 {
+  color: var(--muted);
+}
+.employer-meta h3 {
+  margin-top: var(--spacing-75);
+}
+.employer-meta > .body-5 {
+  margin-top: var(--spacing-50);
+}
+.experience-toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.experience-toggle::before,
+.experience-toggle::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 300ms var(--motion);
+}
+.experience-toggle::after {
+  transform: rotate(90deg);
+}
+.experience-entry[open] > summary .experience-toggle::after,
+.career-role[open] > summary .experience-toggle::after {
+  transform: rotate(0);
+}
+.experience-entry[open] > .experience-summary,
+.career-role[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+.experience-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: var(--spacing-400);
+  align-items: start;
+  padding: var(--spacing-400);
+}
+.role-copy > .body-3,
+.responsibility-list {
+  color: var(--muted);
+}
+.responsibility-list {
+  display: grid;
+  gap: var(--spacing-100);
+  padding-left: var(--spacing-200);
+  margin-top: var(--spacing-300);
+}
+.role-copy > .tag-list {
+  margin-top: var(--spacing-300);
+}
+.career-roles {
+  padding: var(--spacing-300) var(--spacing-400) var(--spacing-400);
+}
+.career-role {
+  border-radius: 12px;
+}
+.career-role > summary {
+  flex-wrap: wrap;
+  gap: var(--spacing-100) var(--spacing-200);
+  padding: var(--spacing-200) var(--spacing-300);
+}
+.career-role > summary > div {
+  flex: 1 1 180px;
+}
+.career-role > summary .caption-2 {
+  margin-top: var(--spacing-50);
+}
+.career-role .experience-body {
+  padding: var(--spacing-300);
+}
+.experience-entry[open] > .experience-body,
+.experience-entry[open] > .career-roles,
+.career-role[open] > .experience-body {
+  animation: role-enter 500ms var(--motion) both;
+}
+@keyframes role-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 900px) {
+  .architecture-slide {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-300);
+  }
+  .architecture-copy {
+    max-width: 600px;
+  }
+  .architecture-figure {
+    width: 100%;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+  .experience-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-300);
+  }
+  .role-system {
+    width: 100%;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 720px) {
+  .architecture-controls {
+    align-items: stretch;
+    flex-direction: column;
+    gap: var(--spacing-200);
+  }
+  .architecture-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .carousel-actions {
+    display: grid;
+    grid-template-columns: 44px minmax(48px, 1fr) 44px;
+  }
+  .motion-toggle {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-left: 0;
+    margin-top: var(--spacing-75);
+  }
+  .architecture-slide {
+    padding: var(--spacing-200);
+    border-radius: 16px;
+  }
+  .architecture-track {
+    border-radius: 16px;
+  }
+  .experience-summary,
+  .experience-body,
+  .career-roles {
+    padding: var(--spacing-300) var(--spacing-200);
+  }
+  .career-role > summary,
+  .career-role .experience-body {
+    padding: var(--spacing-200);
+  }
+  .diagram-panel {
+    padding: var(--spacing-100);
+    border-radius: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .architecture-track {
+    scroll-behavior: auto;
+  }
+  .map-packet {
+    display: none;
+  }
+  .experience-entry[open] > .experience-body,
+  .experience-entry[open] > .career-roles,
+  .career-role[open] > .experience-body {
+    animation: none;
+  }
+}

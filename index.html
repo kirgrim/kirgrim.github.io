@@ -53,7 +53,9 @@
       crossorigin
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./systems.css" />
     <script src="./script.js" defer></script>
+    <script src="./systems.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -104,6 +106,688 @@
           stroke-width="16"
         />
       </symbol>
+      <marker
+        id="system-arrow"
+        markerWidth="8"
+        markerHeight="6"
+        refX="7.5"
+        refY="3"
+        orient="auto-start-reverse"
+      >
+        <polygon points="0 0, 8 3, 0 6" fill="#81928f" />
+      </marker>
+
+      <symbol id="system-tracr" viewBox="0 0 600 400">
+        <rect
+          class="map-boundary"
+          x="210"
+          y="26"
+          width="196"
+          height="348"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="308" y="51" text-anchor="middle">
+          Platform services
+        </text>
+        <path
+          class="map-edge"
+          d="M178 200H202V106H228"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M178 200H202V294H228"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M388 106H414V200H438"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M388 294H414V200"
+          marker-start="url(#system-arrow)"
+        />
+        <circle
+          class="map-packet"
+          cx="202"
+          cy="120"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 56px; --flow-delay: 0ms"
+        />
+        <circle
+          class="map-packet"
+          cx="202"
+          cy="216"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 56px; --flow-delay: 800ms"
+        />
+        <circle
+          class="map-packet"
+          cx="414"
+          cy="120"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 56px; --flow-delay: 1200ms"
+        />
+        <circle
+          class="map-packet"
+          cx="414"
+          cy="216"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 56px; --flow-delay: 400ms"
+        />
+        <g class="map-node map-client">
+          <rect class="map-box" x="26" y="166" width="152" height="68" rx="8" />
+          <text class="map-label" x="102" y="193" text-anchor="middle">
+            UI client
+          </text>
+          <text class="map-sublabel" x="102" y="215" text-anchor="middle">
+            User interface
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect class="map-box" x="228" y="72" width="160" height="68" rx="8" />
+          <text class="map-label" x="308" y="99" text-anchor="middle">
+            Python services
+          </text>
+          <text class="map-sublabel" x="308" y="121" text-anchor="middle">
+            APIs &amp; integration
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect
+            class="map-box"
+            x="228"
+            y="260"
+            width="160"
+            height="68"
+            rx="8"
+          />
+          <text class="map-label" x="308" y="287" text-anchor="middle">
+            Rust services
+          </text>
+          <text class="map-sublabel" x="308" y="309" text-anchor="middle">
+            Platform logic
+          </text>
+        </g>
+        <g class="map-node map-external">
+          <rect
+            class="map-box"
+            x="438"
+            y="166"
+            width="140"
+            height="68"
+            rx="8"
+          />
+          <text class="map-label" x="508" y="193" text-anchor="middle">
+            Blockchain
+          </text>
+          <text class="map-sublabel" x="508" y="215" text-anchor="middle">
+            Traceability
+          </text>
+        </g>
+      </symbol>
+
+      <symbol id="system-complexio" viewBox="0 0 600 400">
+        <rect
+          class="map-boundary"
+          x="220"
+          y="100"
+          width="368"
+          height="190"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="240" y="127">
+          Integration &amp; automation
+        </text>
+        <path
+          class="map-edge"
+          d="M178 96H210V200H244"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M178 200H244"
+          marker-end="url(#system-arrow)"
+        />
+        <path class="map-edge" d="M178 304H210V200" />
+        <path
+          class="map-edge"
+          d="M376 200H432"
+          marker-end="url(#system-arrow)"
+        />
+        <circle
+          class="map-packet"
+          cx="184"
+          cy="96"
+          r="3"
+          style="--flow-x: 20px; --flow-y: 0px; --flow-delay: 0ms"
+        />
+        <circle
+          class="map-packet"
+          cx="184"
+          cy="200"
+          r="3"
+          style="--flow-x: 40px; --flow-y: 0px; --flow-delay: 700ms"
+        />
+        <circle
+          class="map-packet"
+          cx="210"
+          cy="286"
+          r="3"
+          style="--flow-x: 0px; --flow-y: -64px; --flow-delay: 1400ms"
+        />
+        <circle
+          class="map-packet"
+          cx="386"
+          cy="200"
+          r="3"
+          style="--flow-x: 32px; --flow-y: 0px; --flow-delay: 400ms"
+        />
+        <g class="map-node map-external">
+          <rect class="map-box" x="26" y="64" width="152" height="64" rx="8" />
+          <text class="map-label" x="102" y="91" text-anchor="middle">
+            Data source 1
+          </text>
+          <text class="map-sublabel" x="102" y="112" text-anchor="middle">
+            External data
+          </text>
+        </g>
+        <g class="map-node map-external">
+          <rect class="map-box" x="26" y="168" width="152" height="64" rx="8" />
+          <text class="map-label" x="102" y="195" text-anchor="middle">
+            Data source 2
+          </text>
+          <text class="map-sublabel" x="102" y="216" text-anchor="middle">
+            External data
+          </text>
+        </g>
+        <g class="map-node map-external">
+          <rect class="map-box" x="26" y="272" width="152" height="64" rx="8" />
+          <text class="map-label" x="102" y="299" text-anchor="middle">
+            Data source 3
+          </text>
+          <text class="map-sublabel" x="102" y="320" text-anchor="middle">
+            External data
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect
+            class="map-box"
+            x="244"
+            y="168"
+            width="132"
+            height="64"
+            rx="8"
+          />
+          <text class="map-label" x="310" y="195" text-anchor="middle">
+            ETL pipeline
+          </text>
+          <text class="map-sublabel" x="310" y="216" text-anchor="middle">
+            Data processing
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect
+            class="map-box"
+            x="432"
+            y="168"
+            width="142"
+            height="64"
+            rx="8"
+          />
+          <text class="map-label" x="503" y="195" text-anchor="middle">
+            AI automation
+          </text>
+          <text class="map-sublabel" x="503" y="216" text-anchor="middle">
+            Platform
+          </text>
+        </g>
+      </symbol>
+
+      <symbol id="system-neon" viewBox="0 0 600 400">
+        <rect
+          class="map-boundary"
+          x="20"
+          y="20"
+          width="560"
+          height="360"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="40" y="48">Kubernetes cluster</text>
+        <path
+          class="map-edge map-async"
+          d="M160 144V196"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge map-async"
+          d="M440 144V196"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge map-async"
+          d="M160 252V302"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge map-async"
+          d="M440 252V302"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <circle
+          class="map-packet"
+          cx="160"
+          cy="154"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 28px; --flow-delay: 0ms"
+        />
+        <circle
+          class="map-packet"
+          cx="440"
+          cy="182"
+          r="3"
+          style="--flow-x: 0px; --flow-y: -28px; --flow-delay: 700ms"
+        />
+        <circle
+          class="map-packet"
+          cx="160"
+          cy="264"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 26px; --flow-delay: 1100ms"
+        />
+        <circle
+          class="map-packet"
+          cx="440"
+          cy="290"
+          r="3"
+          style="--flow-x: 0px; --flow-y: -26px; --flow-delay: 300ms"
+        />
+        <g class="map-node map-service">
+          <rect class="map-box" x="50" y="80" width="220" height="64" rx="8" />
+          <text class="map-label" x="160" y="107" text-anchor="middle">
+            Chatbots
+          </text>
+          <text class="map-sublabel" x="160" y="128" text-anchor="middle">
+            Conversational applications
+          </text>
+        </g>
+        <g class="map-node map-client">
+          <rect class="map-box" x="330" y="80" width="220" height="64" rx="8" />
+          <text class="map-label" x="440" y="107" text-anchor="middle">
+            Conversational
+          </text>
+          <text class="map-sublabel" x="440" y="128" text-anchor="middle">
+            Website
+          </text>
+        </g>
+        <g class="map-node map-queue">
+          <rect class="map-box" x="60" y="196" width="480" height="56" rx="8" />
+          <text class="map-label" x="300" y="219" text-anchor="middle">
+            AMQP message bus
+          </text>
+          <text class="map-sublabel" x="300" y="239" text-anchor="middle">
+            Asynchronous messaging
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect class="map-box" x="50" y="302" width="220" height="56" rx="8" />
+          <text class="map-label" x="160" y="325" text-anchor="middle">
+            Neon System
+          </text>
+          <text class="map-sublabel" x="160" y="345" text-anchor="middle">
+            Conversational services
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect
+            class="map-box"
+            x="330"
+            y="302"
+            width="220"
+            height="56"
+            rx="8"
+          />
+          <text class="map-label" x="440" y="325" text-anchor="middle">
+            TTS / STT
+          </text>
+          <text class="map-sublabel" x="440" y="345" text-anchor="middle">
+            Speech services
+          </text>
+        </g>
+      </symbol>
+
+      <symbol id="system-anodot" viewBox="0 0 600 400">
+        <rect
+          class="map-boundary"
+          x="198"
+          y="44"
+          width="390"
+          height="312"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="218" y="69">AWS serverless</text>
+        <path
+          class="map-edge"
+          d="M178 122H218"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M378 122H418"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M498 154V210H98V270"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M298 210V270"
+          marker-end="url(#system-arrow)"
+        />
+        <circle
+          class="map-packet"
+          cx="186"
+          cy="122"
+          r="3"
+          style="--flow-x: 20px; --flow-y: 0px; --flow-delay: 0ms"
+        />
+        <circle
+          class="map-packet"
+          cx="386"
+          cy="122"
+          r="3"
+          style="--flow-x: 20px; --flow-y: 0px; --flow-delay: 500ms"
+        />
+        <circle
+          class="map-packet"
+          cx="498"
+          cy="166"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 32px; --flow-delay: 1000ms"
+        />
+        <circle
+          class="map-packet"
+          cx="270"
+          cy="210"
+          r="3"
+          style="--flow-x: -144px; --flow-y: 0px; --flow-delay: 1500ms"
+        />
+        <g class="map-node map-cloud">
+          <rect class="map-box" x="18" y="90" width="160" height="64" rx="8" />
+          <text class="map-label" x="98" y="117" text-anchor="middle">
+            Tenant accounts
+          </text>
+          <text class="map-sublabel" x="98" y="138" text-anchor="middle">
+            Cloud data
+          </text>
+        </g>
+        <g class="map-node map-cloud">
+          <rect class="map-box" x="218" y="90" width="160" height="64" rx="8" />
+          <text class="map-label" x="298" y="117" text-anchor="middle">
+            Lambda ingest
+          </text>
+          <text class="map-sublabel" x="298" y="138" text-anchor="middle">
+            Data collection
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect class="map-box" x="418" y="90" width="160" height="64" rx="8" />
+          <text class="map-label" x="498" y="117" text-anchor="middle">
+            Cost analytics
+          </text>
+          <text class="map-sublabel" x="498" y="138" text-anchor="middle">
+            Cost optimization
+          </text>
+        </g>
+        <g class="map-node map-client">
+          <rect class="map-box" x="18" y="270" width="160" height="64" rx="8" />
+          <text class="map-label" x="98" y="297" text-anchor="middle">
+            Dashboards
+          </text>
+          <text class="map-sublabel" x="98" y="318" text-anchor="middle">
+            Tenant views
+          </text>
+        </g>
+        <g class="map-node map-store">
+          <rect
+            class="map-box"
+            x="218"
+            y="270"
+            width="160"
+            height="64"
+            rx="8"
+          />
+          <text class="map-label" x="298" y="297" text-anchor="middle">
+            Data store
+          </text>
+          <text class="map-sublabel" x="298" y="318" text-anchor="middle">
+            Cost &amp; usage data
+          </text>
+        </g>
+      </symbol>
+
+      <symbol id="system-tripledot" viewBox="0 0 600 400">
+        <rect
+          class="map-boundary"
+          x="20"
+          y="50"
+          width="220"
+          height="310"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="40" y="78">Game client</text>
+        <rect
+          class="map-boundary"
+          x="292"
+          y="50"
+          width="286"
+          height="310"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="312" y="78">AWS serverless</text>
+        <path
+          class="map-edge"
+          d="M218 148H322"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M435 182V270"
+          marker-start="url(#system-arrow)"
+          marker-end="url(#system-arrow)"
+        />
+        <text class="map-sublabel" x="270" y="136" text-anchor="middle">
+          Protobuf
+        </text>
+        <circle
+          class="map-packet"
+          cx="232"
+          cy="148"
+          r="3"
+          style="--flow-x: 72px; --flow-y: 0px; --flow-delay: 0ms"
+        />
+        <circle
+          class="map-packet"
+          cx="435"
+          cy="196"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 56px; --flow-delay: 1000ms"
+        />
+        <g class="map-node map-client">
+          <rect class="map-box" x="42" y="114" width="176" height="68" rx="8" />
+          <text class="map-label" x="130" y="141" text-anchor="middle">
+            Unity client
+          </text>
+          <text class="map-sublabel" x="130" y="163" text-anchor="middle">
+            Live Play Bingo
+          </text>
+        </g>
+        <g class="map-node map-cloud">
+          <rect
+            class="map-box"
+            x="322"
+            y="114"
+            width="226"
+            height="68"
+            rx="8"
+          />
+          <text class="map-label" x="435" y="141" text-anchor="middle">
+            AWS Lambda
+          </text>
+          <text class="map-sublabel" x="435" y="163" text-anchor="middle">
+            Realtime services
+          </text>
+        </g>
+        <g class="map-node map-store">
+          <rect
+            class="map-box"
+            x="347"
+            y="270"
+            width="176"
+            height="64"
+            rx="8"
+          />
+          <text class="map-label" x="435" y="297" text-anchor="middle">
+            DynamoDB
+          </text>
+          <text class="map-sublabel" x="435" y="318" text-anchor="middle">
+            Game state
+          </text>
+        </g>
+      </symbol>
+
+      <symbol id="system-monolith" viewBox="0 0 600 400">
+        <text class="map-boundary-label" x="300" y="24" text-anchor="middle">
+          Before service migration
+        </text>
+        <rect
+          class="map-boundary"
+          x="206"
+          y="46"
+          width="220"
+          height="318"
+          rx="12"
+        />
+        <text class="map-boundary-label" x="226" y="74">
+          Legacy application
+        </text>
+        <path
+          class="map-edge"
+          d="M168 122H236"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M316 148V188"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M316 240V280"
+          marker-end="url(#system-arrow)"
+        />
+        <path
+          class="map-edge"
+          d="M396 306H464"
+          marker-end="url(#system-arrow)"
+        />
+        <circle
+          class="map-packet"
+          cx="178"
+          cy="122"
+          r="3"
+          style="--flow-x: 44px; --flow-y: 0px; --flow-delay: 0ms"
+        />
+        <circle
+          class="map-packet"
+          cx="316"
+          cy="156"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 20px; --flow-delay: 600ms"
+        />
+        <circle
+          class="map-packet"
+          cx="316"
+          cy="248"
+          r="3"
+          style="--flow-x: 0px; --flow-y: 20px; --flow-delay: 1200ms"
+        />
+        <circle
+          class="map-packet"
+          cx="408"
+          cy="306"
+          r="3"
+          style="--flow-x: 42px; --flow-y: 0px; --flow-delay: 1800ms"
+        />
+        <g class="map-node map-client">
+          <rect class="map-box" x="20" y="90" width="148" height="64" rx="8" />
+          <text class="map-label" x="94" y="117" text-anchor="middle">
+            Client
+          </text>
+          <text class="map-sublabel" x="94" y="138" text-anchor="middle">
+            Application UI
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect class="map-box" x="236" y="96" width="160" height="52" rx="8" />
+          <text class="map-label" x="316" y="127" text-anchor="middle">
+            API
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect
+            class="map-box"
+            x="236"
+            y="188"
+            width="160"
+            height="52"
+            rx="8"
+          />
+          <text class="map-label" x="316" y="219" text-anchor="middle">
+            Domain logic
+          </text>
+        </g>
+        <g class="map-node map-service">
+          <rect
+            class="map-box"
+            x="236"
+            y="280"
+            width="160"
+            height="52"
+            rx="8"
+          />
+          <text class="map-label" x="316" y="311" text-anchor="middle">
+            Data access
+          </text>
+        </g>
+        <g class="map-node map-store">
+          <rect
+            class="map-box"
+            x="464"
+            y="274"
+            width="116"
+            height="64"
+            rx="8"
+          />
+          <text class="map-label" x="522" y="301" text-anchor="middle">
+            Database
+          </text>
+          <text class="map-sublabel" x="522" y="322" text-anchor="middle">
+            Persistence
+          </text>
+        </g>
+      </symbol>
     </svg>
 
     <header class="site-header">
@@ -116,7 +800,7 @@
         ><span class="brand-name">Kyrylo Hrymailo</span></a
       >
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a class="title-4" href="#work">Selected work</a>
+        <a class="title-4" href="#work">Architectures</a>
         <a class="title-4" href="#experience">Experience</a>
         <a class="title-4" href="#about">About</a>
       </nav>
@@ -149,7 +833,7 @@
         </button>
       </div>
       <nav aria-label="Mobile navigation">
-        <a class="heading-3" href="#work">Selected work</a>
+        <a class="heading-3" href="#work">Architectures</a>
         <a class="heading-3" href="#experience">Experience</a>
         <a class="heading-3" href="#about">About me</a>
         <a class="heading-3" href="mailto:kirill.grim@gmail.com"
@@ -346,243 +1030,253 @@
         </div>
       </section>
 
-      <div class="context-strip section-shell" aria-label="Industry experience">
-        <span class="eyebrow caption-4">Across different worlds</span>
-        <div class="title-3">
-          <span>Traceability</span><span>Conversational AI</span
-          ><span>Cloud intelligence</span><span>Live gaming</span>
-        </div>
-      </div>
-
-      <section
-        class="strengths section-shell section-space"
-        aria-labelledby="strengths-heading"
-      >
-        <div class="section-heading reveal">
-          <p class="eyebrow caption-3">What I bring</p>
-          <h2 id="strengths-heading" class="heading-2">
-            The system. The product.<br />The people building it.
-          </h2>
-        </div>
-        <div class="strength-grid">
-          <article class="strength-card reveal">
-            <span class="section-number caption-3">01 / Backend</span>
-            <h3 class="heading-5">Systems that hold together</h3>
-            <p class="body-3">
-              APIs, asynchronous services, and distributed messaging. Clear
-              contracts and meaningful tests to make complex software easier to
-              change.
-            </p>
-            <p class="skill-line caption-1">
-              Python · FastAPI · Rust · RabbitMQ
-            </p>
-          </article>
-          <article class="strength-card reveal">
-            <span class="section-number caption-3">02 / Cloud & data</span>
-            <h3 class="heading-5">Built for production</h3>
-            <p class="body-3">
-              From AWS serverless applications to Kubernetes clusters and
-              database migrations. Performance, monitoring, and delivery belong
-              in the design.
-            </p>
-            <p class="skill-line caption-1">
-              AWS · Kubernetes · SQL · Terraform
-            </p>
-          </article>
-          <article class="strength-card reveal">
-            <span class="section-number caption-3">03 / Leadership</span>
-            <h3 class="heading-5">Direction without distance</h3>
-            <p class="body-3">
-              Hands on technical leadership, grounded in the code. I turn
-              requirements into plans, mentor developers, and keep stakeholders
-              close to the work.
-            </p>
-            <p class="skill-line caption-1">
-              Architecture · Mentoring · Delivery
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section
         id="work"
         tabindex="-1"
-        class="work-section section-space"
+        class="architecture-section section-space"
         aria-labelledby="work-heading"
       >
         <div class="section-shell">
           <div class="section-heading section-heading-split reveal">
             <div>
-              <p class="eyebrow caption-3">Selected work</p>
+              <p class="eyebrow caption-3">System design in practice</p>
               <h2 id="work-heading" class="heading-2">
-                Complexity, made practical.
+                Architectures I’ve<br />worked with.
               </h2>
             </div>
             <p class="body-3 section-note">
-              A few problems I’ve helped solve.<br />Different domains, the same
-              care.
+              Explore an architecture, then open the experience behind it.
             </p>
           </div>
-          <article class="work-card reveal">
-            <div class="work-visual traceability-art" aria-hidden="true">
-              <span class="caption-3 visual-label"
-                >Traceability / Platform engineering</span
-              ><svg viewBox="0 0 400 235">
-                <g fill="none" stroke="#91a583" stroke-width="1.5">
-                  <path d="M80 118h75m90 0h75M200 35v38m0 88v38" />
-                  <circle cx="80" cy="118" r="25" />
-                  <circle cx="320" cy="118" r="25" />
-                  <circle cx="200" cy="35" r="12" />
-                  <circle cx="200" cy="199" r="12" />
-                </g>
-                <path d="m200 65 53 53-53 53-53-53z" fill="#526546" />
-                <path
-                  d="m174 118 18 18 36-36"
-                  fill="none"
-                  stroke="#f5f3ee"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <g fill="#526546">
-                  <circle cx="80" cy="118" r="5" />
-                  <circle cx="320" cy="118" r="5" />
-                </g></svg
-              ><span class="caption-4 visual-caption"
-                >Connected data. Clear provenance.</span
+          <div
+            class="architecture-carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="System design architectures"
+          >
+            <div class="architecture-controls" hidden>
+              <div
+                class="architecture-tabs"
+                role="group"
+                aria-label="Choose architecture"
               >
-            </div>
-            <div class="work-copy">
-              <p class="eyebrow caption-3">Tracr · 2025 — present</p>
-              <h3 class="heading-4">
-                Engineering trust into the supply chain.
-              </h3>
-              <p class="body-3">
-                Designing and integrating APIs for a diamond traceability
-                platform. My work spans database performance, critical test
-                coverage, Rust services, and Prometheus monitoring.
-              </p>
-              <ul class="tag-list caption-4" aria-label="Technologies">
-                <li>Python</li>
-                <li>Rust</li>
-                <li>PostgreSQL</li>
-                <li>Prometheus</li>
-              </ul>
-              <p class="work-outcome body-5">
-                Focus: reliable APIs and observable services
-              </p>
-            </div>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-visual conversation-art" aria-hidden="true">
-              <span class="caption-3 visual-label"
-                >Conversational AI / Technical leadership</span
-              ><svg viewBox="0 0 400 235">
-                <g stroke="#ba8b72" stroke-width="1.5" fill="none">
-                  <path d="M105 68h190v80H167l-33 28v-28h-29z" fill="#f5e6db" />
-                  <path d="M161 112h149v67h-26v23l-28-23h-95z" fill="#e8c3ac" />
-                </g>
-                <g fill="#805b44">
-                  <circle cx="138" cy="100" r="4" />
-                  <circle cx="158" cy="100" r="4" />
-                  <circle cx="178" cy="100" r="4" />
-                </g>
-                <path
-                  d="M187 140h96m-96 16h64"
-                  stroke="#805b44"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                /></svg
-              ><span class="caption-4 visual-caption"
-                >One ecosystem. A shared direction.</span
-              >
-            </div>
-            <div class="work-copy">
-              <p class="eyebrow caption-3">Neon.AI · Lead software engineer</p>
-              <h3 class="heading-4">
-                A voice platform.<br />A shared direction.
-              </h3>
-              <p class="body-3">
-                Led a team of up to five building an open source conversational
-                AI ecosystem. Designed distributed messaging with AMQP, managed
-                Kubernetes infrastructure, and connected engineering progress
-                with stakeholder needs.
-              </p>
-              <ul class="tag-list caption-4" aria-label="Technologies">
-                <li>Python</li>
-                <li>RabbitMQ</li>
-                <li>Kubernetes</li>
-                <li>React</li>
-              </ul>
-              <p class="work-outcome body-5">
-                Scope: architecture, team leadership, and delivery
-              </p>
-            </div>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-visual data-art" aria-hidden="true">
-              <span class="caption-3 visual-label"
-                >Cloud intelligence / Data engineering</span
-              ><svg viewBox="0 0 400 235">
-                <g stroke="#7b91a0" stroke-width="1.5">
-                  <path d="M75 82v72c0 22 80 22 80 0V82" fill="#e3e9ed" />
-                  <ellipse cx="115" cy="82" rx="40" ry="13" fill="#eff1f2" />
-                  <path
-                    d="M75 108c0 22 80 22 80 0m-80 24c0 22 80 22 80 0"
-                    fill="none"
-                  />
-                  <path d="M245 82v72c0 22 80 22 80 0V82" fill="#b9cad4" />
-                  <ellipse cx="285" cy="82" rx="40" ry="13" fill="#e3e9ed" />
-                  <path
-                    d="M245 108c0 22 80 22 80 0m-80 24c0 22 80 22 80 0"
-                    fill="none"
-                  />
-                  <path d="M172 118h55m-12-12 12 12-12 12" fill="none" />
-                </g>
-                <text
-                  x="115"
-                  y="201"
-                  text-anchor="middle"
-                  class="caption-4"
-                  fill="#526874"
+                <button
+                  class="architecture-tab title-4"
+                  type="button"
+                  data-slide="0"
+                  aria-current="true"
                 >
-                  Redshift
-                </text>
-                <text
-                  x="285"
-                  y="201"
-                  text-anchor="middle"
-                  class="caption-4"
-                  fill="#526874"
+                  ETL</button
+                ><button
+                  class="architecture-tab title-4"
+                  type="button"
+                  data-slide="1"
                 >
-                  BigQuery
-                </text></svg
-              ><span class="caption-4 visual-caption"
-                >A petabyte of data. A considered move.</span
+                  Kubernetes</button
+                ><button
+                  class="architecture-tab title-4"
+                  type="button"
+                  data-slide="2"
+                >
+                  Serverless</button
+                ><button
+                  class="architecture-tab title-4"
+                  type="button"
+                  data-slide="3"
+                >
+                  Monolith
+                </button>
+              </div>
+              <div class="carousel-actions">
+                <button
+                  class="carousel-prev carousel-arrow"
+                  type="button"
+                  aria-label="Previous architecture"
+                >
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-right" />
+                  </svg>
+                </button>
+                <p
+                  class="carousel-status caption-1"
+                  aria-live="polite"
+                  aria-atomic="true"
+                >
+                  1 of 4
+                </p>
+                <button
+                  class="carousel-next carousel-arrow"
+                  type="button"
+                  aria-label="Next architecture"
+                >
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-right" />
+                  </svg></button
+                ><button
+                  class="motion-toggle button-sm"
+                  type="button"
+                  hidden
+                  aria-pressed="false"
+                >
+                  Pause diagram motion
+                </button>
+              </div>
+            </div>
+            <div
+              class="architecture-track"
+              tabindex="0"
+              aria-label="Architecture slides"
+            >
+              <article
+                class="architecture-slide"
+                id="architecture-etl"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 of 4: ETL"
               >
+                <div class="architecture-copy">
+                  <p class="eyebrow caption-3">Complexio · Data integration</p>
+                  <h3 class="heading-4">Many sources. A useful data flow.</h3>
+                  <p class="body-3">
+                    Bringing data from different sources into an AI automation
+                    platform, with ingestion and transformation between source
+                    systems and product workflows.
+                  </p>
+                  <a class="text-link button-md" href="#job-complexio"
+                    >Explore this experience
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#arrow-up-right" /></svg
+                  ></a>
+                </div>
+                <figure class="architecture-figure diagram-panel">
+                  <svg
+                    class="system-map"
+                    viewBox="0 0 600 400"
+                    role="img"
+                    aria-label="Different data sources feed an ETL pipeline, which supplies an AI automation platform."
+                  >
+                    <use href="#system-complexio" />
+                  </svg>
+                  <figcaption class="caption-2">
+                    Sources → ETL → AI automation platform
+                  </figcaption>
+                </figure>
+              </article>
+              <article
+                class="architecture-slide"
+                id="architecture-kubernetes"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 of 4: Kubernetes"
+              >
+                <div class="architecture-copy">
+                  <p class="eyebrow caption-3">Neon.AI · Conversational AI</p>
+                  <h3 class="heading-4">Many services. One platform.</h3>
+                  <p class="body-3">
+                    A Kubernetes cluster runs conversational interfaces, chatbot
+                    services, the Neon System, and speech services. AMQP
+                    messaging connects the services across the ecosystem.
+                  </p>
+                  <a class="text-link button-md" href="#job-neon"
+                    >Explore this experience
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#arrow-up-right" /></svg
+                  ></a>
+                </div>
+                <figure class="architecture-figure diagram-panel">
+                  <svg
+                    class="system-map"
+                    viewBox="0 0 600 400"
+                    role="img"
+                    aria-label="Chatbots, conversational website, Neon System, and TTS and STT services communicate through messaging inside a Kubernetes cluster."
+                  >
+                    <use href="#system-neon" />
+                  </svg>
+                  <figcaption class="caption-2">
+                    Conversational interfaces → messaging → speech services
+                  </figcaption>
+                </figure>
+              </article>
+              <article
+                class="architecture-slide"
+                id="architecture-serverless"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 of 4: Serverless"
+              >
+                <div class="architecture-copy">
+                  <p class="eyebrow caption-3">
+                    Tripledot Studios · Real time gaming
+                  </p>
+                  <h3 class="heading-4">Real time play, backed by Lambda.</h3>
+                  <p class="body-3">
+                    A Unity client communicates with AWS Lambda services through
+                    Protobuf messages. The backend combines real time game
+                    services, persistent state, and the tooling needed to run
+                    LiveOps.
+                  </p>
+                  <a class="text-link button-md" href="#job-tripledot"
+                    >Explore this experience
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#arrow-up-right" /></svg
+                  ></a>
+                </div>
+                <figure class="architecture-figure diagram-panel">
+                  <svg
+                    class="system-map"
+                    viewBox="0 0 600 400"
+                    role="img"
+                    aria-label="A Unity game client communicates through Protobuf with AWS Lambda real time services, backed by DynamoDB."
+                  >
+                    <use href="#system-tripledot" />
+                  </svg>
+                  <figcaption class="caption-2">
+                    Unity client ↔ Protobuf ↔ AWS Lambda services
+                  </figcaption>
+                </figure>
+              </article>
+              <article
+                class="architecture-slide"
+                id="architecture-monolith"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="4 of 4: Monolith"
+              >
+                <div class="architecture-copy">
+                  <p class="eyebrow caption-3">
+                    Complexio · Architecture evolution
+                  </p>
+                  <h3 class="heading-4">
+                    Understand the whole. Find the seams.
+                  </h3>
+                  <p class="body-3">
+                    At Complexio, I migrated legacy application code toward
+                    services and asynchronous PostgreSQL and Neo4j access. That
+                    work required tracing the API, business logic, and
+                    persistence inside the original application.
+                  </p>
+                  <a class="text-link button-md" href="#job-complexio"
+                    >Explore this experience
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#arrow-up-right" /></svg
+                  ></a>
+                </div>
+                <figure class="architecture-figure diagram-panel">
+                  <svg
+                    class="system-map"
+                    viewBox="0 0 600 400"
+                    role="img"
+                    aria-label="Before the service migration, a client connects to one application containing API, business logic, and data access, backed by a database."
+                  >
+                    <use href="#system-monolith" />
+                  </svg>
+                  <figcaption class="caption-2">
+                    A view of the legacy application before service migration
+                  </figcaption>
+                </figure>
+              </article>
             </div>
-            <div class="work-copy">
-              <p class="eyebrow caption-3">Anodot · Senior Python engineer</p>
-              <h3 class="heading-4">
-                Moving data.<br />Keeping the bigger picture.
-              </h3>
-              <p class="body-3">
-                Worked on Pileus, a platform for cloud cost optimization.
-                Coordinated a petabyte scale migration from Redshift to
-                BigQuery, alongside ETL maintenance, AWS deployment automation,
-                monitoring, and tests.
-              </p>
-              <ul class="tag-list caption-4" aria-label="Technologies">
-                <li>AWS</li>
-                <li>BigQuery</li>
-                <li>Terraform</li>
-                <li>Python</li>
-              </ul>
-              <p class="work-outcome body-5">
-                Scope: data migration and cloud automation
-              </p>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
 
@@ -607,16 +1301,13 @@
         class="experience section-shell section-space"
         aria-labelledby="experience-heading"
       >
-        <div class="experience-intro reveal">
-          <p class="eyebrow caption-3">The path so far</p>
-          <h2 id="experience-heading" class="heading-2">
-            Experience,<br />across the stack.
-          </h2>
-          <p class="body-3">
-            From conversational AI to cloud intelligence, live gaming, and
-            traceability. A career spent connecting systems with the products
-            they serve.
-          </p>
+        <div class="section-heading section-heading-split reveal">
+          <div>
+            <p class="eyebrow caption-3">The experience behind the systems</p>
+            <h2 id="experience-heading" class="heading-2">
+              A closer look at the work.
+            </h2>
+          </div>
           <a
             class="text-link button-md"
             href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit"
@@ -627,73 +1318,360 @@
               <use href="#arrow-up-right" /></svg
           ></a>
         </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <p class="caption-2">Oct 2025 — present</p>
-            <div>
-              <h3 class="title-1">Tracr</h3>
-              <p class="body-5">Software engineering contractor</p>
-              <p class="body-6">
-                APIs, Rust services, database performance, and platform
-                observability.
-              </p>
+        <p class="body-3 experience-hint">
+          Expand an employer to explore my responsibilities and the system I
+          worked on.
+        </p>
+        <div class="experience-list">
+          <details class="experience-entry" id="job-tracr" tabindex="-1" open>
+            <summary class="experience-summary">
+              <div class="employer-meta">
+                <span class="caption-2">Oct 2025 — present</span>
+                <h3 class="heading-5">Tracr</h3>
+                <p class="body-5">Software engineering contractor</p>
+              </div>
+              <span class="experience-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="experience-body">
+              <div class="role-copy">
+                <p class="body-3">
+                  Platform engineering for diamond traceability, connecting the
+                  UI, Rust and Python services, and a blockchain layer.
+                </p>
+                <ul class="responsibility-list body-3">
+                  <li>
+                    Designed specifications and integrated APIs for business
+                    features.
+                  </li>
+                  <li>
+                    Improved PostgreSQL query performance and test coverage for
+                    critical components.
+                  </li>
+                  <li>
+                    Developed and maintained Rust services and asynchronous
+                    Python APIs.
+                  </li>
+                  <li>
+                    Integrated Prometheus monitoring and worked with Docker and
+                    GitLab CI.
+                  </li>
+                </ul>
+                <ul class="tag-list caption-4" aria-label="Technologies">
+                  <li>Python</li>
+                  <li>Rust</li>
+                  <li>FastAPI</li>
+                  <li>PostgreSQL</li>
+                  <li>Prometheus</li>
+                </ul>
+              </div>
+              <figure class="role-system diagram-panel">
+                <svg
+                  class="system-map"
+                  viewBox="0 0 600 400"
+                  role="img"
+                  aria-label="A UI client connects to Rust and Python services, which interact with a blockchain layer."
+                >
+                  <use href="#system-tracr" />
+                </svg>
+                <figcaption class="caption-2">
+                  UI client ↔ Rust and Python services ↔ blockchain
+                </figcaption>
+              </figure>
             </div>
-          </article>
-          <article class="timeline-item reveal">
-            <p class="caption-2">Jul 2025 — Oct 2025</p>
-            <div>
-              <h3 class="title-1">Complexio</h3>
-              <p class="body-5">Senior full stack engineer</p>
-              <p class="body-6">
-                Service migrations, asynchronous persistence, frontend E2E
-                testing, and customer releases.
-              </p>
+          </details>
+          <details class="experience-entry" id="job-complexio" tabindex="-1">
+            <summary class="experience-summary">
+              <div class="employer-meta">
+                <span class="caption-2">Jul 2025 — Oct 2025</span>
+                <h3 class="heading-5">Complexio</h3>
+                <p class="body-5">Senior full stack engineer</p>
+              </div>
+              <span class="experience-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="experience-body">
+              <div class="role-copy">
+                <p class="body-3">
+                  An AI automation platform supported by ETL pipelines that
+                  bring together data from multiple sources.
+                </p>
+                <ul class="responsibility-list body-3">
+                  <li>
+                    Developed user applications and services, and supported
+                    releases into customer environments.
+                  </li>
+                  <li>
+                    Migrated legacy monolithic code toward services and
+                    asynchronous PostgreSQL and Neo4j access.
+                  </li>
+                  <li>
+                    Introduced frontend E2E testing and documented missing parts
+                    of the platform.
+                  </li>
+                  <li>
+                    Built performance monitoring, dashboards, and alert rules.
+                  </li>
+                </ul>
+                <ul class="tag-list caption-4" aria-label="Technologies">
+                  <li>Python</li>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>PostgreSQL</li>
+                  <li>Neo4j</li>
+                  <li>Datadog</li>
+                </ul>
+              </div>
+              <figure class="role-system diagram-panel">
+                <svg
+                  class="system-map"
+                  viewBox="0 0 600 400"
+                  role="img"
+                  aria-label="Multiple data sources feed ingestion and transformation stages before reaching the AI automation platform."
+                >
+                  <use href="#system-complexio" />
+                </svg>
+                <figcaption class="caption-2">
+                  Different sources → ETL pipeline → AI automation
+                </figcaption>
+              </figure>
             </div>
-          </article>
-          <article class="timeline-item reveal">
-            <p class="caption-2">Jan 2023 — Jul 2025</p>
-            <div>
-              <h3 class="title-1">Neon.AI</h3>
-              <p class="body-5">Lead software engineer</p>
-              <p class="body-6">
-                A team of up to five, distributed conversational AI, and
-                Kubernetes infrastructure.
-              </p>
+          </details>
+          <details class="experience-entry" id="job-neon" tabindex="-1">
+            <summary class="experience-summary">
+              <div class="employer-meta">
+                <span class="caption-2">2018 — 2021 · 2023 — 2025</span>
+                <h3 class="heading-5">Neon.AI</h3>
+                <p class="body-5">Two roles in conversational AI</p>
+              </div>
+              <span class="experience-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="career-roles">
+              <details class="career-role" open>
+                <summary>
+                  <div>
+                    <h4 class="title-1">Lead software engineer</h4>
+                    <p class="caption-2">Jan 2023 — Jul 2025</p>
+                  </div>
+                  <span class="experience-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="experience-body">
+                  <div class="role-copy">
+                    <p class="body-3">
+                      Hands on technical leadership for an open source
+                      conversational AI ecosystem, with Kubernetes managing its
+                      microservices.
+                    </p>
+                    <ul class="responsibility-list body-3">
+                      <li>
+                        Led a team of up to five developers and communicated
+                        progress to management and stakeholders.
+                      </li>
+                      <li>
+                        Designed distributed services and an AMQP communication
+                        protocol for conversational applications.
+                      </li>
+                      <li>
+                        Managed Kubernetes infrastructure and CI pipelines for
+                        the platform.
+                      </li>
+                      <li>
+                        Worked across database tuning and React applications for
+                        users and administrators.
+                      </li>
+                    </ul>
+                    <ul class="tag-list caption-4" aria-label="Technologies">
+                      <li>Python</li>
+                      <li>Kubernetes</li>
+                      <li>RabbitMQ</li>
+                      <li>React</li>
+                      <li>MySQL</li>
+                      <li>MongoDB</li>
+                    </ul>
+                  </div>
+                  <figure class="role-system diagram-panel">
+                    <svg
+                      class="system-map"
+                      viewBox="0 0 600 400"
+                      role="img"
+                      aria-label="A Kubernetes cluster manages chatbot services, a conversational website, the Neon System, TTS and STT, connected through an AMQP message bus."
+                    >
+                      <use href="#system-neon" />
+                    </svg>
+                    <figcaption class="caption-2">
+                      Kubernetes orchestration for interfaces, messaging, and
+                      speech services
+                    </figcaption>
+                  </figure>
+                </div>
+              </details>
+              <details class="career-role">
+                <summary>
+                  <div>
+                    <h4 class="title-1">Software engineer</h4>
+                    <p class="caption-2">Oct 2018 — Jul 2021</p>
+                  </div>
+                  <span class="experience-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="experience-body">
+                  <div class="role-copy">
+                    <p class="body-3">
+                      Development of an open source conversational AI ecosystem
+                      across services and user interfaces.
+                    </p>
+                    <ul class="responsibility-list body-3">
+                      <li>
+                        Built and maintained conversational AI services and
+                        distributed messaging integrations.
+                      </li>
+                      <li>
+                        Migrated a legacy PHP forum to asynchronous Python with
+                        FastAPI.
+                      </li>
+                      <li>
+                        Set up CI delivery pipelines and expanded automated test
+                        coverage.
+                      </li>
+                    </ul>
+                    <ul class="tag-list caption-4" aria-label="Technologies">
+                      <li>Python</li>
+                      <li>FastAPI</li>
+                      <li>RabbitMQ</li>
+                      <li>Kubernetes</li>
+                      <li>React</li>
+                    </ul>
+                  </div>
+                  <figure class="role-system diagram-panel">
+                    <svg
+                      class="system-map"
+                      viewBox="0 0 600 400"
+                      role="img"
+                      aria-label="A Kubernetes cluster manages chatbot services, a conversational website, the Neon System, TTS and STT, connected through an AMQP message bus."
+                    >
+                      <use href="#system-neon" />
+                    </svg>
+                    <figcaption class="caption-2">
+                      Kubernetes orchestration for interfaces, messaging, and
+                      speech services
+                    </figcaption>
+                  </figure>
+                </div>
+              </details>
             </div>
-          </article>
-          <article class="timeline-item reveal">
-            <p class="caption-2">May 2023 — Jul 2024</p>
-            <div>
-              <h3 class="title-1">Tripledot Studios</h3>
-              <p class="body-5">Senior Python developer</p>
-              <p class="body-6">
-                Real time serverless infrastructure, DynamoDB, admin tooling,
-                and LiveOps for Live Play Bingo.
-              </p>
+          </details>
+          <details class="experience-entry" id="job-tripledot" tabindex="-1">
+            <summary class="experience-summary">
+              <div class="employer-meta">
+                <span class="caption-2">May 2023 — Jul 2024</span>
+                <h3 class="heading-5">Tripledot Studios</h3>
+                <p class="body-5">Senior Python developer</p>
+              </div>
+              <span class="experience-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="experience-body">
+              <div class="role-copy">
+                <p class="body-3">
+                  Backend engineering for Live Play Bingo, with real time AWS
+                  Lambda services communicating with a Unity client through
+                  Protobuf.
+                </p>
+                <ul class="responsibility-list body-3">
+                  <li>
+                    Developed and maintained real time serverless
+                    infrastructure.
+                  </li>
+                  <li>
+                    Tuned DynamoDB access and investigated spikes in the system.
+                  </li>
+                  <li>
+                    Built administration tools with React and TypeScript and
+                    automated LiveOps workflows.
+                  </li>
+                  <li>
+                    Maintained tests and technical documentation for the
+                    backend.
+                  </li>
+                </ul>
+                <ul class="tag-list caption-4" aria-label="Technologies">
+                  <li>Python</li>
+                  <li>AWS Lambda</li>
+                  <li>Protobuf</li>
+                  <li>DynamoDB</li>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+              <figure class="role-system diagram-panel">
+                <svg
+                  class="system-map"
+                  viewBox="0 0 600 400"
+                  role="img"
+                  aria-label="A Unity client exchanges Protobuf messages with AWS Lambda real time services and DynamoDB persistence."
+                >
+                  <use href="#system-tripledot" />
+                </svg>
+                <figcaption class="caption-2">
+                  Unity client ↔ Protobuf ↔ Lambda services → game state
+                </figcaption>
+              </figure>
             </div>
-          </article>
-          <article class="timeline-item reveal">
-            <p class="caption-2">Jul 2021 — May 2023</p>
-            <div>
-              <h3 class="title-1">Anodot</h3>
-              <p class="body-5">Senior Python engineer</p>
-              <p class="body-6">
-                Cloud cost intelligence, AWS automation, ETL pipelines, and a
-                petabyte scale data migration.
-              </p>
+          </details>
+          <details class="experience-entry" id="job-anodot" tabindex="-1">
+            <summary class="experience-summary">
+              <div class="employer-meta">
+                <span class="caption-2">Jul 2021 — May 2023</span>
+                <h3 class="heading-5">Anodot</h3>
+                <p class="body-5">Senior Python engineer</p>
+              </div>
+              <span class="experience-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="experience-body">
+              <div class="role-copy">
+                <p class="body-3">
+                  Serverless engineering for Pileus, a cloud cost optimization
+                  platform serving multiple tenants.
+                </p>
+                <ul class="responsibility-list body-3">
+                  <li>
+                    Developed and maintained serverless cloud services and ETL
+                    workflows.
+                  </li>
+                  <li>
+                    Automated AWS deployment configuration with Terraform and
+                    scripts.
+                  </li>
+                  <li>
+                    Coordinated the migration of a petabyte of data from
+                    Redshift to BigQuery, including monitoring and
+                    infrastructure work.
+                  </li>
+                  <li>
+                    Expanded automated testing, wrote documentation, and
+                    mentored new team members.
+                  </li>
+                </ul>
+                <ul class="tag-list caption-4" aria-label="Technologies">
+                  <li>Python</li>
+                  <li>AWS</li>
+                  <li>Terraform</li>
+                  <li>Redshift</li>
+                  <li>BigQuery</li>
+                  <li>DynamoDB</li>
+                </ul>
+              </div>
+              <figure class="role-system diagram-panel">
+                <svg
+                  class="system-map"
+                  viewBox="0 0 600 400"
+                  role="img"
+                  aria-label="Multiple tenant cloud accounts feed serverless ingestion, cloud cost analytics, and tenant dashboards, with persistent data storage."
+                >
+                  <use href="#system-anodot" />
+                </svg>
+                <figcaption class="caption-2">
+                  Tenant cloud accounts → serverless processing → cost analytics
+                </figcaption>
+              </figure>
             </div>
-          </article>
-          <article class="timeline-item reveal">
-            <p class="caption-2">Oct 2018 — Jul 2021</p>
-            <div>
-              <h3 class="title-1">Neon.AI</h3>
-              <p class="body-5">Software engineer</p>
-              <p class="body-6">
-                Open source conversational AI, asynchronous Python services, and
-                CI pipelines.
-              </p>
-            </div>
-          </article>
+          </details>
         </div>
       </section>
 

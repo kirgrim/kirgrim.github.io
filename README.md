@@ -28,13 +28,16 @@ The root [.nojekyll](./.nojekyll) file tells GitHub Pages to serve the files dir
 
 ## Edit the site
 
-- [index.html](./index.html): headline, experience, expertise, selected projects, and contact links.
+- [index.html](./index.html): introduction, reusable SVG architecture diagrams, carousel slides, employer panels, and contact links.
 - [styles.css](./styles.css): layout, typography, colors, responsive behavior, and self-hosted font definitions.
 - [script.js](./script.js): lightweight page interactions.
-- [assets/](./assets/): font files, favicon, and social preview artwork.
+- [systems.css](./systems.css) and [systems.js](./systems.js): architecture carousel, nested experience panels, and diagram motion controls.
+- [assets/](./assets/): portrait, font files, favicon, and social preview artwork.
 - [privacy.html](./privacy.html), [terms.html](./terms.html), and [404.html](./404.html): supporting pages.
 
 The site uses warm cream `#f5f3ee`, dark `#191b19`, and orange `#b94721`. Keep the canonical URL and sharing metadata aligned with the live address if the domain changes.
+
+The architecture carousel supports buttons, keyboard arrows, and horizontal scrolling. Employer descriptions use native disclosures, including two nested roles at Neon.AI. The motion control pauses all animated diagrams; reduced motion preferences show static diagrams. Both the carousel and experience descriptions remain accessible without JavaScript.
 
 ## Content and design sources
 
