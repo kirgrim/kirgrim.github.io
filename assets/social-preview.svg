@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Kyrylo Hrymailo</title>
+  <desc id="description">Lead Software Engineer and Senior Python Developer based in Warsaw, Poland.</desc>
+  <defs>
+    <style>@font-face{font-family:Manrope;src:url('manrope.ttf') format('truetype');font-weight:200 800}</style>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" fill="none" stroke="#191b19" stroke-opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#f5f3ee"/>
+  <path d="M64 64h1072" stroke="#191b19" stroke-opacity=".22"/>
+  <circle cx="71" cy="96" r="6" fill="#b94721"/>
+  <g fill="#191b19" font-family="Manrope, sans-serif">
+    <text x="90" y="102" font-size="16" letter-spacing="2">SOFTWARE ENGINEERING</text>
+    <text x="64" y="250" font-size="96" font-weight="700" letter-spacing="-5">Kyrylo</text>
+    <text x="64" y="350" font-size="96" font-weight="700" letter-spacing="-5">Hrymailo<tspan fill="#b94721">.</tspan></text>
+    <text x="68" y="426" font-size="24" font-weight="500">Lead Software Engineer</text>
+    <text x="68" y="465" font-size="24" font-weight="500">Senior Python Developer</text>
+    <text x="68" y="565" font-size="18">WARSAW, POLAND</text>
+    <text x="1136" y="565" font-size="18" text-anchor="end">kirgrim.github.io</text>
+  </g>
+  <g transform="translate(760 154)">
+    <rect width="342" height="342" rx="3" fill="url(#grid)"/>
+    <path d="M19 133h76l38-57h76l38 57h76M19 209h76l38 57h76l38-57h76M95 133v76m152-76v76" fill="none" stroke="#191b19" stroke-width="2"/>
+    <path d="M133 76h76v190h-76z" fill="#b94721" fill-opacity=".08" stroke="#b94721" stroke-width="2"/>
+    <path d="m159 152-19 19 19 19m24-38 19 19-19 19" fill="none" stroke="#b94721" stroke-width="4"/>
+    <g fill="#f5f3ee" stroke="#191b19" stroke-width="2">
+      <circle cx="19" cy="133" r="7"/><circle cx="19" cy="209" r="7"/>
+      <circle cx="323" cy="133" r="7"/><circle cx="323" cy="209" r="7"/>
+      <circle cx="95" cy="133" r="7"/><circle cx="95" cy="209" r="7"/>
+      <circle cx="247" cy="133" r="7"/><circle cx="247" cy="209" r="7"/>
+    </g>
+    <circle cx="171" cy="76" r="7" fill="#b94721"/>
+    <circle cx="171" cy="266" r="7" fill="#b94721"/>
+  </g>
+</svg>
