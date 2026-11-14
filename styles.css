@@ -313,6 +313,9 @@ button:active {
 .hero-role {
   margin-top: var(--spacing-100);
   color: var(--muted);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
 }
 .intro-contacts {
   grid-column: 2;
@@ -438,6 +441,8 @@ button:active {
 }
 .hero h1 {
   max-width: 680px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.12;
   background: linear-gradient(100deg, #000, #666);
   background-clip: text;
   -webkit-background-clip: text;
@@ -445,6 +450,9 @@ button:active {
 }
 .hero h1 .accent {
   color: var(--accent);
+}
+.hero h1 > span[aria-hidden="true"] {
+  color: var(--ink);
 }
 .hero-description {
   grid-column: 2;
@@ -628,6 +636,10 @@ details[open] .faq-toggle::after {
   .hero h1 {
     max-width: 600px;
   }
+  .hero-role {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .section-heading {
     margin-bottom: var(--spacing-400);
   }
@@ -648,10 +660,6 @@ details[open] .faq-toggle::after {
   }
 }
 @media (max-width: 390px) {
-  .hero h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }
   .heading-2 {
     font-size: 30px;
     line-height: 36px;
@@ -660,10 +668,6 @@ details[open] .faq-toggle::after {
 @media (max-width: 360px) {
   .hero-identity {
     grid-template-columns: minmax(0, 1fr);
-  }
-  .hero h1 {
-    font-size: 30px;
-    line-height: 36px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
