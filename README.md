@@ -32,17 +32,19 @@ The root [.nojekyll](./.nojekyll) file tells GitHub Pages to serve the files dir
 - [styles.css](./styles.css): layout, typography, colors, responsive behavior, and self-hosted font definitions.
 - [script.js](./script.js): lightweight page interactions.
 - [systems.css](./systems.css) and [systems.js](./systems.js): nested experience panels and diagram motion controls.
-- [assets/](./assets/): portrait, font files, favicon, and social preview artwork.
+- [assets/](./assets/): supplied portrait, company logos, social icons, font files, favicon, and social preview artwork.
 - [privacy.html](./privacy.html), [terms.html](./terms.html), and [404.html](./404.html): supporting pages.
 
 The site uses warm cream `#f5f3ee`, dark `#191b19`, and orange `#b94721`. Keep the canonical URL and sharing metadata aligned with the live address if the domain changes.
 
-Email, LinkedIn, GitHub, and CV links sit beside the introduction. Employer descriptions use native disclosures, including two nested roles at Neon.AI. The experience section's motion control pauses all animated diagrams; reduced motion preferences show static diagrams. Contact links and experience descriptions remain accessible without JavaScript.
+Email, LinkedIn, GitHub, and CV links sit beside the introduction. Employer descriptions use native disclosures, including two nested roles at Neon.AI. Diagrams animate briefly on load and when a role opens, then settle within 4.3 seconds; reduced motion preferences show static diagrams. Education is in the useful details section. Contact links and experience descriptions remain accessible without JavaScript.
 
 ## Content and design sources
 
 - Professional content: [Kyrylo Hrymailo's CV](https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit).
 - Public project links: [GitHub profile](https://github.com/kirgrim).
 - Requested design guidance: [Landing Page Design](https://agenticskills.io/skills/landing-page-design).
+- Social icons: [Phosphor](https://github.com/phosphor-icons/core), with the bundled [MIT license](./assets/Phosphor-LICENSE.txt).
+- Company logos: official sites for [Tracr](https://tracr.com/), [Complexio](https://complexio.com/press-kit), [Neon.AI](https://www.neon.ai/), [Tripledot](https://www.tripledotstudios.com/), and [Anodot](https://www.anodot.com/).
 
 This site adds no analytics, cookies, forms, or tracking scripts. Update the [privacy page](./privacy.html) if that changes.

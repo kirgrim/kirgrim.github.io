@@ -2,40 +2,6 @@
 .career-roles {
   min-width: 0;
 }
-.experience-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--spacing-200);
-}
-.experience-controls .motion-toggle[hidden] {
-  display: none;
-}
-.experience-controls .motion-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: var(--spacing-100) var(--spacing-200);
-  border: 1px solid #c9cec1;
-  border-radius: 8px;
-  background: transparent;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  transition:
-    background-color 300ms var(--motion),
-    border-color 300ms var(--motion),
-    color 300ms var(--motion);
-}
-.experience-controls .motion-toggle:hover {
-  background: var(--sage);
-  border-color: var(--ink);
-}
-.experience-controls .motion-toggle:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-}
 .diagram-panel {
   margin: 0;
   padding: var(--spacing-200);
@@ -114,15 +80,11 @@
 .map-packet {
   fill: #fbbf24;
   opacity: 0;
-  animation: packet-travel 2.8s var(--motion) infinite;
+  animation: var(--diagram-animation, none) 2.8s var(--motion) both;
   animation-delay: var(--flow-delay, 0s);
-  animation-play-state: var(--diagram-motion, paused);
 }
 .diagrams-ready {
-  --diagram-motion: running;
-}
-.diagrams-paused {
-  --diagram-motion: paused;
+  --diagram-animation: packet-travel;
 }
 @keyframes packet-travel {
   0%,
@@ -175,9 +137,6 @@
 .employer-meta > .caption-2,
 .career-role > summary .caption-2 {
   color: var(--muted);
-}
-.employer-meta h3 {
-  margin-top: var(--spacing-75);
 }
 .employer-meta > .body-5 {
   margin-top: var(--spacing-50);

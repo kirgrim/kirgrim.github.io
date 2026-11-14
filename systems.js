@@ -1,26 +1,15 @@
-const motionToggle = document.querySelector(
-  ".experience-controls .motion-toggle",
-);
-
-if (motionToggle) {
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  let motionPaused = false;
-
-  const syncMotion = () => {
-    const paused = motionPaused || reducedMotion.matches;
-    document.body.classList.toggle("diagrams-paused", paused);
-    motionToggle.hidden = reducedMotion.matches;
-    motionToggle.setAttribute("aria-pressed", String(paused));
-    motionToggle.textContent = paused
-      ? "Resume diagram motion"
-      : "Pause diagram motion";
-  };
-  motionToggle.addEventListener("click", () => {
-    motionPaused = !motionPaused;
-    syncMotion();
-  });
-  reducedMotion.addEventListener("change", syncMotion);
-
-  syncMotion();
+const replayDiagrams = () => {
+  document.body.classList.remove("diagrams-ready");
+  void document.body.offsetWidth;
   document.body.classList.add("diagrams-ready");
-}
+};
+
+document
+  .querySelectorAll(".experience-entry, .career-role")
+  .forEach((entry) => {
+    entry.addEventListener("toggle", () => {
+      if (entry.open) replayDiagrams();
+    });
+  });
+
+replayDiagrams();

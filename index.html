@@ -668,59 +668,6 @@
       </symbol>
     </svg>
 
-    <header class="site-header">
-      <a
-        class="brand title-4"
-        href="#intro"
-        aria-label="kh. Kyrylo Hrymailo, home"
-        aria-current="page"
-        ><span class="monogram">kh<span>.</span></span
-        ><span class="brand-name">Kyrylo Hrymailo</span></a
-      >
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a class="title-4" href="#experience">Experience</a>
-        <a class="title-4" href="#about">About</a>
-      </nav>
-      <a
-        class="button button-dark button-sm header-contact"
-        href="mailto:kirill.grim@gmail.com"
-        >Let’s talk
-        <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg
-      ></a>
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open navigation"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-      >
-        <span></span><span></span>
-      </button>
-    </header>
-
-    <dialog id="mobile-menu" class="mobile-menu" aria-label="Navigation">
-      <div class="mobile-menu-header">
-        <span class="monogram title-4">kh<span>.</span></span
-        ><button
-          class="menu-toggle is-open"
-          type="button"
-          aria-label="Close navigation"
-        >
-          <span></span><span></span>
-        </button>
-      </div>
-      <nav aria-label="Mobile navigation">
-        <a class="heading-3" href="#experience">Experience</a>
-        <a class="heading-3" href="#about">About me</a>
-        <a class="heading-3" href="mailto:kirill.grim@gmail.com"
-          >Let’s talk
-          <svg class="icon" aria-hidden="true">
-            <use href="#arrow-up-right" /></svg
-        ></a>
-      </nav>
-      <p class="caption-2">Warsaw, Poland · Engineering since 2018</p>
-    </dialog>
-
     <main id="main" tabindex="-1">
       <section
         id="intro"
@@ -732,7 +679,7 @@
           <div class="hero-identity">
             <img
               class="hero-avatar"
-              src="./assets/avatar.jpg"
+              src="./assets/portrait.jpg"
               alt="Portrait of Kyrylo Hrymailo"
               width="96"
               height="96"
@@ -753,19 +700,33 @@
                 >Email</a
               >
               <a
-                class="title-4"
+                class="social-link"
                 href="https://www.linkedin.com/in/kyrylo-hrymailo"
+                aria-label="LinkedIn profile"
+                title="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
-                >LinkedIn</a
-              >
+                ><img
+                  src="./assets/linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+              /></a>
               <a
-                class="title-4"
+                class="social-link"
                 href="https://github.com/kirgrim"
+                aria-label="GitHub profile"
+                title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
-                >GitHub</a
-              >
+                ><img
+                  src="./assets/github.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+              /></a>
               <a
                 class="title-4"
                 href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit"
@@ -812,15 +773,8 @@
               rel="noopener noreferrer"
               >Read my full CV
               <svg class="icon" aria-hidden="true">
-                <use href="#arrow-up-right" /></svg></a
-            ><button
-              class="motion-toggle button-sm"
-              type="button"
-              hidden
-              aria-pressed="false"
-            >
-              Pause diagram motion
-            </button>
+                <use href="#arrow-up-right" /></svg
+            ></a>
           </div>
         </div>
         <p class="body-3 experience-hint">
@@ -832,7 +786,19 @@
             <summary class="experience-summary">
               <div class="employer-meta">
                 <span class="caption-2">Oct 2025 — present</span>
-                <h3 class="heading-5">Tracr</h3>
+                <div class="company-name">
+                  <img
+                    class="company-logo"
+                    src="./assets/companies/tracr.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="heading-5">Tracr</h3>
+                </div>
                 <p class="body-5">Software engineering contractor</p>
               </div>
               <span class="experience-toggle" aria-hidden="true"></span>
@@ -888,7 +854,19 @@
             <summary class="experience-summary">
               <div class="employer-meta">
                 <span class="caption-2">Jul 2025 — Oct 2025</span>
-                <h3 class="heading-5">Complexio</h3>
+                <div class="company-name">
+                  <img
+                    class="company-logo"
+                    src="./assets/companies/complexio.webp"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="heading-5">Complexio</h3>
+                </div>
                 <p class="body-5">Senior full stack engineer</p>
               </div>
               <span class="experience-toggle" aria-hidden="true"></span>
@@ -944,7 +922,19 @@
             <summary class="experience-summary">
               <div class="employer-meta">
                 <span class="caption-2">2018 — 2021 · 2023 — 2025</span>
-                <h3 class="heading-5">Neon.AI</h3>
+                <div class="company-name">
+                  <img
+                    class="company-logo"
+                    src="./assets/companies/neon.png"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="heading-5">Neon.AI</h3>
+                </div>
                 <p class="body-5">Two roles in conversational AI</p>
               </div>
               <span class="experience-toggle" aria-hidden="true"></span>
@@ -1066,7 +1056,19 @@
             <summary class="experience-summary">
               <div class="employer-meta">
                 <span class="caption-2">May 2023 — Jul 2024</span>
-                <h3 class="heading-5">Tripledot Studios</h3>
+                <div class="company-name">
+                  <img
+                    class="company-logo logo-wide"
+                    src="./assets/companies/tripledot.png"
+                    alt=""
+                    aria-hidden="true"
+                    width="96"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="heading-5">Tripledot Studios</h3>
+                </div>
                 <p class="body-5">Senior Python developer</p>
               </div>
               <span class="experience-toggle" aria-hidden="true"></span>
@@ -1123,7 +1125,19 @@
             <summary class="experience-summary">
               <div class="employer-meta">
                 <span class="caption-2">Jul 2021 — May 2023</span>
-                <h3 class="heading-5">Anodot</h3>
+                <div class="company-name">
+                  <img
+                    class="company-logo"
+                    src="./assets/companies/anodot.png"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="heading-5">Anodot</h3>
+                </div>
                 <p class="body-5">Senior Python engineer</p>
               </div>
               <span class="experience-toggle" aria-hidden="true"></span>
@@ -1181,21 +1195,6 @@
       </section>
 
       <section
-        class="tagline-section section-shell section-space"
-        aria-labelledby="tagline-heading"
-      >
-        <p class="eyebrow caption-3">How I think about the work</p>
-        <h2 id="tagline-heading" class="heading-1 tagline">
-          Make the complex clear.<br />Build with care.<br />Keep the product
-          moving.
-        </h2>
-        <p class="body-3 tagline-note">
-          Good engineering connects the architecture to the people who build it,
-          operate it, and use it.
-        </p>
-      </section>
-
-      <section
         id="about"
         tabindex="-1"
         class="about-section section-space"
@@ -1219,16 +1218,6 @@
               interested in AI and the engineering that turns an idea into a
               useful product.
             </p>
-            <div class="education">
-              <p class="eyebrow caption-3">Education</p>
-              <p class="body-5">Master of Engineering · Database Engineering</p>
-              <p class="body-6">
-                Polish-Japanese Academy of Information Technology
-              </p>
-              <p class="body-6">
-                University College Dublin · Erasmus+ exchange
-              </p>
-            </div>
           </div>
           <div class="approach-card reveal">
             <p class="eyebrow caption-3">Working together</p>
@@ -1346,6 +1335,24 @@
           </details>
           <details class="reveal">
             <summary class="title-3">
+              What is your educational background?<span
+                class="faq-toggle"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <div class="education-details">
+              <p class="body-3">
+                <strong>Master of Engineering · Database Engineering</strong
+                ><br />Polish-Japanese Academy of Information Technology
+              </p>
+              <p class="body-3">
+                <strong>Erasmus+ exchange</strong><br />University College
+                Dublin
+              </p>
+            </div>
+          </details>
+          <details class="reveal">
+            <summary class="title-3">
               Where can I see your full background?<span
                 class="faq-toggle"
                 aria-hidden="true"
@@ -1376,5 +1383,8 @@
         </div>
       </section>
     </main>
+    <footer class="copyright-footer section-shell">
+      <p class="caption-2">© 2026 Kyrylo Hrymailo. All rights reserved.</p>
+    </footer>
   </body>
 </html>
