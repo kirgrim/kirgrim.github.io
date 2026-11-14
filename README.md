@@ -28,7 +28,7 @@ The root [.nojekyll](./.nojekyll) file tells GitHub Pages to serve the files dir
 
 ## Edit the site
 
-- [index.html](./index.html): introduction, contact links, source-backed work examples, employer panels, and reusable SVG system diagrams.
+- [index.html](./index.html): introduction, contact links, employer panels with public-source links, and reusable SVG system diagrams.
 - [styles.css](./styles.css): layout, typography, colors, responsive behavior, and self-hosted font definitions.
 - [script.js](./script.js): lightweight page interactions.
 - [systems.css](./systems.css) and [systems.js](./systems.js): nested experience panels and diagram motion controls.
