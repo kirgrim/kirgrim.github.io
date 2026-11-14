@@ -26,6 +26,8 @@ For the root URL `https://kirgrim.github.io/`, the repository must be named `kir
 
 The root [.nojekyll](./.nojekyll) file tells GitHub Pages to serve the files directly. GitHub's Pages deployment publishes future pushes to `main` automatically.
 
+CSS and JavaScript URLs include `?v=` followed by the first 12 characters of the file's SHA-256. Refresh matching HTML references when an asset changes so browsers load the matching version. Keep the stylesheet URL in the 404 page root-relative.
+
 ## Edit the site
 
 - [index.html](./index.html): introduction, contact links, employer panels, side projects, and reusable SVG system diagrams.
@@ -37,11 +39,11 @@ The root [.nojekyll](./.nojekyll) file tells GitHub Pages to serve the files dir
 
 The site uses warm cream `#f5f3ee`, dark `#191b19`, and orange `#b94721`. Keep the canonical URL and sharing metadata aligned with the live address if the domain changes.
 
-Email, LinkedIn, GitHub, and CV links sit beside the introduction. Employer descriptions use native disclosures, including two nested roles at Neon.AI. Diagrams animate briefly on load and when a role opens, then settle within 4.3 seconds; reduced motion preferences show static diagrams. Education is in the useful details section. Contact links and experience descriptions remain accessible without JavaScript.
+The avatar, greeting, role, and labelled contact links form a centered profile header. Introduction is the first content section; its copy, Experience, Side projects, and useful details share the same content edges. Employer descriptions use native disclosures, including two nested roles at Neon.AI. Diagrams animate briefly on load and when a role opens, then settle within 4.3 seconds; reduced motion preferences show static diagrams. Education is in the useful details section. Contact links and experience descriptions remain accessible without JavaScript.
 
 Longevity, AI Interview Buddy, and Genkit appear in the side-projects section using the same native disclosures. Genkit lists the role as open-source contributor, with links to merged pull requests. The Longevity and AI Interview Buddy descriptions are based on the supplied local repositories; they do not claim product usage or commercial results.
 
-Project start months come from the first commits: Longevity on 14 March 2026, AI Interview Buddy on 2 March 2025, and the first attributable Genkit contribution on 4 February 2025. Ongoing dates reflect the author's confirmed current involvement.
+Project start months come from the first commits: Longevity on 14 March 2026, AI Interview Buddy on 2 March 2025, and the first attributable Genkit contribution on 4 February 2025. Longevity and AI Interview Buddy remain ongoing. Genkit ends in April 2025: the final merged contribution was merged on 8 April, and the last authored work on an unmerged proposal was on 14 April.
 
 The PDF link uses the original Google Doc's PDF export and sharing permissions. The repository contains no copy of the CV document. SVG symbol definitions follow the main content and are hidden from assistive technology.
 
@@ -52,7 +54,7 @@ The team of up to five, petabyte-scale migration, and 30% increase in total test
 - Professional content: [Kyrylo Hrymailo's CV](https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit).
 - Authored public work: [API controller](https://github.com/NeonGeckoCom/neon_api_proxy/commit/e871a2aa8ea9aee0eea045bcf87bb4e9cd62c46e), [RabbitMQ publishing](https://github.com/NeonGeckoCom/neon_mq_connector/commit/e780cbe25f74d8427397ec624103e8225cefc86d), and [LLM persona synchronization](https://github.com/NeonGeckoCom/neon-llm-core/commit/d3bc687772a3628bea32b8f3c3ad8d4c11c1995d).
 - Genkit contributions: [merged pull requests by kirgrim](https://github.com/genkit-ai/genkit/pulls?q=is%3Apr+author%3Akirgrim+is%3Amerged), including the [Python Ollama plugin](https://github.com/genkit-ai/genkit/pull/1828), [structured responses](https://github.com/genkit-ai/genkit/pull/2300), and [local vector store](https://github.com/genkit-ai/genkit/pull/2379).
-- Genkit start date: [first authored Ollama-plugin commit](https://github.com/genkit-ai/genkit/commit/7ad270f61bd21b0b7ad2125382cc32b477d7b12d).
+- Genkit contribution dates: [first authored Ollama-plugin commit](https://github.com/genkit-ai/genkit/commit/7ad270f61bd21b0b7ad2125382cc32b477d7b12d), [final merged contribution](https://github.com/genkit-ai/genkit/pull/2707), and [last authored work on an unmerged proposal](https://github.com/genkit-ai/genkit/commit/27f5a621dd6cc8e0d5534641a4b890480ec00f41).
 - Side projects: user-selected Longevity and AI Interview Buddy, checked against their local source and project documentation. The Longevity icon comes from the supplied app assets; its [public website](https://www.mplongevityapp.com/) provides a product link.
 - Public project links: [GitHub profile](https://github.com/kirgrim).
 - Requested design guidance: [Landing Page Design](https://agenticskills.io/skills/landing-page-design).

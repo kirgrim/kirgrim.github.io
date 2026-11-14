@@ -287,23 +287,16 @@ button:active {
   padding-bottom: var(--spacing-700);
   margin-top: 0;
 }
-.hero-copy {
-  display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  column-gap: var(--spacing-300);
-}
 .hero-identity {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--spacing-200) var(--spacing-300);
+  gap: var(--spacing-200);
+  text-align: center;
 }
 .hero-avatar {
   width: 96px;
   height: 96px;
-  grid-row: 1 / 3;
-  align-self: start;
   object-fit: cover;
   object-position: center 25%;
   border: 1px solid var(--line);
@@ -317,11 +310,12 @@ button:active {
   font-weight: 600;
 }
 .intro-contacts {
-  grid-column: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-200);
+  max-width: 100%;
 }
 .intro-contacts a:not(.button) {
   display: inline-flex;
@@ -464,9 +458,8 @@ button:active {
   color: var(--ink);
 }
 .hero-description {
-  grid-column: 1 / -1;
-  margin-top: var(--spacing-400);
   color: var(--muted);
+  text-align: left;
 }
 .hero-description > p + p {
   margin-top: var(--spacing-200);
@@ -620,20 +613,9 @@ details[open] .faq-toggle::after {
     padding-bottom: var(--spacing-500);
     margin-top: 0;
   }
-  .hero-identity {
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--spacing-200);
-  }
-  .hero-copy {
-    display: block;
-  }
   .hero-avatar {
     width: 80px;
     height: 80px;
-    grid-row: auto;
-  }
-  .intro-contacts {
-    grid-column: 1 / -1;
   }
   .company-logo.logo-wide {
     width: 64px;
@@ -668,11 +650,6 @@ details[open] .faq-toggle::after {
   .heading-2 {
     font-size: 30px;
     line-height: 36px;
-  }
-}
-@media (max-width: 360px) {
-  .hero-identity {
-    grid-template-columns: minmax(0, 1fr);
   }
 }
 @media (prefers-reduced-motion: reduce) {

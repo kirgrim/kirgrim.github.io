@@ -52,10 +52,10 @@
       type="font/ttf"
       crossorigin
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./systems.css" />
-    <script src="./script.js" defer></script>
-    <script src="./systems.js" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=bf0a4e4f120f" />
+    <link rel="stylesheet" href="./systems.css?v=e51dd7ff26f5" />
+    <script src="./script.js?v=2dbcaace4186" defer></script>
+    <script src="./systems.js?v=8ec01a357bf3" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -83,94 +83,98 @@
     <a class="skip-link button-md" href="#main">Skip to content</a>
 
     <main id="main" tabindex="-1">
+      <header id="profile" tabindex="-1" class="hero section-shell">
+        <div class="hero-identity">
+          <img
+            class="hero-avatar"
+            src="./assets/portrait.jpg"
+            alt="Portrait of Kyrylo Hrymailo"
+            width="96"
+            height="96"
+            fetchpriority="high"
+          />
+          <div class="hero-title">
+            <h1 id="hero-heading" class="heading-1">
+              Hi <span aria-hidden="true">👋</span><br />I’m Kyrylo
+              Hrymailo<span class="accent">.</span>
+            </h1>
+            <p class="hero-role caption-2">
+              Lead software engineer · Warsaw, Poland
+            </p>
+          </div>
+          <nav class="intro-contacts" aria-label="Contact and profile links">
+            <a class="social-link" href="mailto:kirill.grim@gmail.com"
+              ><img
+                src="./assets/email.svg"
+                alt=""
+                aria-hidden="true"
+                width="24"
+                height="24"
+              /><span>Email</span></a
+            >
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/in/kyrylo-hrymailo"
+              aria-label="LinkedIn profile"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./assets/linkedin.svg"
+                alt=""
+                aria-hidden="true"
+                width="24"
+                height="24"
+              /><span>LinkedIn</span></a
+            >
+            <a
+              class="social-link"
+              href="https://github.com/kirgrim"
+              aria-label="GitHub profile"
+              title="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./assets/github.svg"
+                alt=""
+                aria-hidden="true"
+                width="24"
+                height="24"
+              /><span>GitHub</span></a
+            >
+            <a
+              class="title-4"
+              href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/export?format=pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CV (PDF)</a
+            >
+          </nav>
+        </div>
+      </header>
+
       <section
         id="intro"
         tabindex="-1"
-        class="hero section-shell"
-        aria-labelledby="hero-heading"
+        class="introduction section-shell section-space"
+        aria-labelledby="intro-heading"
       >
-        <div class="hero-copy">
-          <div class="hero-identity">
-            <img
-              class="hero-avatar"
-              src="./assets/portrait.jpg"
-              alt="Portrait of Kyrylo Hrymailo"
-              width="96"
-              height="96"
-              fetchpriority="high"
-            />
-            <div class="hero-title">
-              <h1 id="hero-heading" class="heading-1">
-                Hi <span aria-hidden="true">👋</span><br />I’m Kyrylo
-                Hrymailo<span class="accent">.</span>
-              </h1>
-              <p class="hero-role caption-2">
-                Lead software engineer · Warsaw, Poland
-              </p>
-            </div>
-            <nav class="intro-contacts" aria-label="Contact and profile links">
-              <a class="social-link" href="mailto:kirill.grim@gmail.com"
-                ><img
-                  src="./assets/email.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="24"
-                  height="24"
-                /><span>Email</span></a
-              >
-              <a
-                class="social-link"
-                href="https://www.linkedin.com/in/kyrylo-hrymailo"
-                aria-label="LinkedIn profile"
-                title="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="./assets/linkedin.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="24"
-                  height="24"
-                /><span>LinkedIn</span></a
-              >
-              <a
-                class="social-link"
-                href="https://github.com/kirgrim"
-                aria-label="GitHub profile"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="./assets/github.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="24"
-                  height="24"
-                /><span>GitHub</span></a
-              >
-              <a
-                class="title-4"
-                href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/export?format=pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                >CV (PDF)</a
-              >
-            </nav>
-          </div>
-          <div class="hero-description">
-            <p class="body-7">
-              I’m a software engineer and technical lead with over 8 years of
-              experience across AI, cloud platforms, data engineering, and
-              gaming. My work spans backend services, full-stack applications,
-              and cloud infrastructure.
-            </p>
-            <p class="body-7">
-              I combine hands-on development with team leadership. I work
-              through the full software lifecycle, from clarifying requirements
-              and designing systems to writing code, reviewing changes, and
-              supporting production services.
-            </p>
-          </div>
+        <div class="section-heading reveal">
+          <h2 id="intro-heading" class="heading-2">Introduction</h2>
+        </div>
+        <div class="hero-description">
+          <p class="body-7">
+            I’m a software engineer and technical lead with over 8 years of
+            experience across AI, cloud platforms, data engineering, and gaming.
+            My work spans backend services, full-stack applications, and cloud
+            infrastructure.
+          </p>
+          <p class="body-7">
+            I combine hands-on development with team leadership. I work through
+            the full software lifecycle, from clarifying requirements and
+            designing systems to writing code, reviewing changes, and supporting
+            production services.
+          </p>
         </div>
       </section>
 
@@ -772,7 +776,7 @@
           <details class="experience-entry" id="work-genkit" tabindex="-1">
             <summary class="experience-summary">
               <div class="employer-meta">
-                <span class="caption-2">Feb 2025 — present</span>
+                <span class="caption-2">Feb — Apr 2025</span>
                 <div class="company-name">
                   <img
                     class="company-logo"
