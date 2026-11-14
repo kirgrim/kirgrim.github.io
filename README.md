@@ -28,7 +28,7 @@ The root [.nojekyll](./.nojekyll) file tells GitHub Pages to serve the files dir
 
 ## Edit the site
 
-- [index.html](./index.html): introduction and contact links, reusable SVG system diagrams, and employer panels.
+- [index.html](./index.html): introduction, contact links, source-backed work examples, employer panels, and reusable SVG system diagrams.
 - [styles.css](./styles.css): layout, typography, colors, responsive behavior, and self-hosted font definitions.
 - [script.js](./script.js): lightweight page interactions.
 - [systems.css](./systems.css) and [systems.js](./systems.js): nested experience panels and diagram motion controls.
@@ -39,9 +39,14 @@ The site uses warm cream `#f5f3ee`, dark `#191b19`, and orange `#b94721`. Keep t
 
 Email, LinkedIn, GitHub, and CV links sit beside the introduction. Employer descriptions use native disclosures, including two nested roles at Neon.AI. Diagrams animate briefly on load and when a role opens, then settle within 4.3 seconds; reduced motion preferences show static diagrams. Education is in the useful details section. Contact links and experience descriptions remain accessible without JavaScript.
 
+The PDF link uses the original Google Doc's PDF export and sharing permissions. The repository contains no copy of the CV document. SVG symbol definitions follow the main content and are hidden from assistive technology.
+
+Numbers on the page come from the supplied CV: a team of up to five, a petabyte-scale migration, and a 30% increase in total test coverage. The source does not specify a coverage baseline or percentage points. Public-source links identify authored changes, without claiming current production results or current test status.
+
 ## Content and design sources
 
 - Professional content: [Kyrylo Hrymailo's CV](https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit).
+- Authored public work: [API controller](https://github.com/NeonGeckoCom/neon_api_proxy/commit/e871a2aa8ea9aee0eea045bcf87bb4e9cd62c46e), [RabbitMQ publishing](https://github.com/NeonGeckoCom/neon_mq_connector/commit/e780cbe25f74d8427397ec624103e8225cefc86d), and [LLM persona synchronization](https://github.com/NeonGeckoCom/neon-llm-core/commit/d3bc687772a3628bea32b8f3c3ad8d4c11c1995d).
 - Public project links: [GitHub profile](https://github.com/kirgrim).
 - Requested design guidance: [Landing Page Design](https://agenticskills.io/skills/landing-page-design).
 - Social icons: [Phosphor](https://github.com/phosphor-icons/core), with the bundled [MIT license](./assets/Phosphor-LICENSE.txt).

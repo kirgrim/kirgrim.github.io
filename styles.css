@@ -390,6 +390,60 @@ button:active {
 .copyright-footer p {
   text-wrap: balance;
 }
+.evidence-section {
+  background: #e9e9e1;
+}
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-300);
+}
+.evidence-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  min-width: 0;
+  padding: var(--spacing-300);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+.evidence-card > .body-3 {
+  color: var(--muted);
+}
+.evidence-card > .source-links {
+  margin-top: auto;
+  padding-top: var(--spacing-75);
+}
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-75) var(--spacing-200);
+}
+.source-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-50);
+  min-height: 44px;
+  padding-block: var(--spacing-75);
+  color: var(--accent);
+}
+.source-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.role-sources {
+  margin-top: var(--spacing-300);
+}
+.role-sources > p {
+  color: var(--muted);
+}
+.experience-body.role-text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+.role-text-only .role-copy {
+  max-width: 680px;
+}
 .hero-identity,
 .hero-description {
   animation: hero-enter 700ms var(--motion) both;
@@ -429,8 +483,7 @@ button:active {
 .section-heading {
   margin-bottom: var(--spacing-600);
 }
-.section-heading .eyebrow,
-.about-grid > .reveal > .eyebrow {
+.section-heading .eyebrow {
   margin-bottom: var(--spacing-200);
 }
 .section-heading-split {
@@ -450,49 +503,6 @@ button:active {
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: var(--spacing-50) var(--spacing-75);
-  color: var(--muted);
-}
-.about-section {
-  background: #e9e9e1;
-}
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-900);
-  align-items: center;
-}
-.about-copy {
-  margin-top: var(--spacing-300);
-  max-width: 480px;
-  color: var(--muted);
-}
-.approach-card {
-  padding: var(--spacing-500);
-  background: var(--paper);
-  border: 1px solid #d1d3c7;
-  border-radius: 24px;
-}
-.approach-card h3 {
-  margin-top: var(--spacing-200);
-}
-.approach-list {
-  list-style: none;
-  padding: 0;
-  margin-top: var(--spacing-500);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-400);
-}
-.approach-list li {
-  display: flex;
-  gap: var(--spacing-200);
-}
-.approach-list li > span {
-  padding-top: var(--spacing-50);
-  color: var(--accent);
-}
-.approach-list p {
-  margin-top: var(--spacing-75);
   color: var(--muted);
 }
 .faq-section {
@@ -601,6 +611,9 @@ details[open] .faq-toggle::after {
   max-width: 680px;
 }
 @media (max-width: 1000px) {
+  .evidence-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .heading-1 {
     font-size: 48px;
     line-height: 48px;
@@ -608,9 +621,6 @@ details[open] .faq-toggle::after {
   .heading-2 {
     font-size: 36px;
     line-height: 40px;
-  }
-  .about-grid {
-    gap: var(--spacing-500);
   }
 }
 @media (max-width: 720px) {
@@ -626,7 +636,7 @@ details[open] .faq-toggle::after {
     margin-top: 0;
   }
   .hero-identity {
-    grid-template-columns: 80px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--spacing-200);
   }
   .hero-copy {
@@ -653,16 +663,6 @@ details[open] .faq-toggle::after {
     align-items: flex-start;
     flex-direction: column;
     gap: var(--spacing-200);
-  }
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-  .about-grid {
-    gap: var(--spacing-400);
-  }
-  .approach-card {
-    padding: var(--spacing-300);
-    border-radius: 16px;
   }
   .faq-list details {
     padding: var(--spacing-200);
