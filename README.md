@@ -45,7 +45,7 @@ Project start months come from the first commits: Longevity on 14 March 2026, AI
 
 The PDF link uses the original Google Doc's PDF export and sharing permissions. The repository contains no copy of the CV document. SVG symbol definitions follow the main content and are hidden from assistive technology.
 
-Numbers on the page come from the supplied CV: a team of up to five, a petabyte-scale migration, and a 30% increase in total test coverage. The source does not specify a coverage baseline or percentage points. Public-source links identify authored changes, without claiming current production results or current test status.
+The team of up to five, petabyte-scale migration, and 30% increase in total test coverage come from the supplied CV. The user confirmed over 8 years of experience. The CV does not specify a coverage baseline or percentage points. Public-source links identify authored changes, without claiming current production results or current test status.
 
 ## Content and design sources
 
@@ -56,7 +56,7 @@ Numbers on the page come from the supplied CV: a team of up to five, a petabyte-
 - Side projects: user-selected Longevity and AI Interview Buddy, checked against their local source and project documentation. The Longevity icon comes from the supplied app assets; its [public website](https://www.mplongevityapp.com/) provides a product link.
 - Public project links: [GitHub profile](https://github.com/kirgrim).
 - Requested design guidance: [Landing Page Design](https://agenticskills.io/skills/landing-page-design).
-- Social icons: [Phosphor](https://github.com/phosphor-icons/core), with the bundled [MIT license](./assets/Phosphor-LICENSE.txt).
+- LinkedIn and GitHub icons: [Phosphor](https://github.com/phosphor-icons/core), with the bundled [MIT license](./assets/Phosphor-LICENSE.txt). The email icon is a simple matching outline SVG.
 - Company logos: official sites for [Tracr](https://tracr.com/), [Complexio](https://complexio.com/press-kit), [Neon.AI](https://www.neon.ai/), [Tripledot](https://www.tripledotstudios.com/), and [Anodot](https://www.anodot.com/).
 
 This site adds no analytics, cookies, forms, or tracking scripts. Update the [privacy page](./privacy.html) if that changes.
