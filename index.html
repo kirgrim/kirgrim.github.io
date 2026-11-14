@@ -52,9 +52,9 @@
       type="font/ttf"
       crossorigin
     />
-    <link rel="stylesheet" href="./styles.css?v=bf0a4e4f120f" />
+    <link rel="stylesheet" href="./styles.css?v=6a1002cd40cb" />
     <link rel="stylesheet" href="./systems.css?v=e51dd7ff26f5" />
-    <script src="./script.js?v=2dbcaace4186" defer></script>
+    <script src="./script.js?v=c1331e620d08" defer></script>
     <script src="./systems.js?v=8ec01a357bf3" defer></script>
     <script type="application/ld+json">
       {
@@ -79,8 +79,55 @@
       }
     </script>
   </head>
-  <body>
+  <body class="with-section-nav">
     <a class="skip-link button-md" href="#main">Skip to content</a>
+
+    <details class="section-navigation">
+      <summary class="navigation-toggle">Sections</summary>
+      <nav class="section-navigation-panel" aria-label="Page sections">
+        <p class="navigation-heading caption-3">On this page</p>
+        <ul class="navigation-list">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#intro">Introduction</a></li>
+          <li>
+            <a href="#experience">Experience</a>
+            <ul>
+              <li><a href="#job-tracr">Tracr</a></li>
+              <li><a href="#job-complexio">Complexio</a></li>
+              <li>
+                <a href="#job-neon">Neon.AI</a>
+                <ul>
+                  <li><a href="#role-neon-lead">Lead engineer</a></li>
+                  <li><a href="#role-neon-engineer">Software engineer</a></li>
+                </ul>
+              </li>
+              <li><a href="#job-tripledot">Tripledot Studios</a></li>
+              <li><a href="#job-anodot">Anodot</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#projects">Side projects</a>
+            <ul>
+              <li><a href="#project-longevity">Longevity</a></li>
+              <li><a href="#project-interview-buddy">AI Interview Buddy</a></li>
+              <li><a href="#work-genkit">Genkit</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#details">A few useful details</a>
+            <ul>
+              <li><a href="#detail-focus">Engineering focus</a></li>
+              <li><a href="#detail-leadership">Leadership</a></li>
+              <li><a href="#detail-full-stack">Full-stack work</a></li>
+              <li><a href="#detail-cloud">Cloud experience</a></li>
+              <li><a href="#detail-location">Location</a></li>
+              <li><a href="#detail-education">Education</a></li>
+              <li><a href="#detail-background">Full background</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </details>
 
     <main id="main" tabindex="-1">
       <header id="profile" tabindex="-1" class="hero section-shell">
@@ -362,7 +409,12 @@
               <span class="experience-toggle" aria-hidden="true"></span>
             </summary>
             <div class="career-roles">
-              <details class="career-role" open>
+              <details
+                class="career-role"
+                id="role-neon-lead"
+                tabindex="-1"
+                open
+              >
                 <summary>
                   <div>
                     <h4 class="title-1">Lead software engineer</h4>
@@ -432,7 +484,11 @@
                   </figure>
                 </div>
               </details>
-              <details class="career-role">
+              <details
+                class="career-role"
+                id="role-neon-engineer"
+                tabindex="-1"
+              >
                 <summary>
                   <div>
                     <h4 class="title-1">Software engineer</h4>
@@ -854,6 +910,8 @@
       </section>
 
       <section
+        id="details"
+        tabindex="-1"
         class="faq-section section-shell section-space"
         aria-labelledby="faq-heading"
       >
@@ -861,7 +919,7 @@
           <h2 id="faq-heading" class="heading-2">A few useful details</h2>
         </div>
         <div class="faq-list">
-          <details class="reveal">
+          <details class="reveal" id="detail-focus" tabindex="-1">
             <summary class="title-3">
               What kind of engineering do you focus on?<span
                 class="faq-toggle"
@@ -874,7 +932,7 @@
               implementation, testing, and production operations.
             </p>
           </details>
-          <details class="reveal">
+          <details class="reveal" id="detail-leadership" tabindex="-1">
             <summary class="title-3">
               Do you lead teams as well as write code?<span
                 class="faq-toggle"
@@ -887,7 +945,7 @@
               development, infrastructure, and stakeholder communication.
             </p>
           </details>
-          <details class="reveal">
+          <details class="reveal" id="detail-full-stack" tabindex="-1">
             <summary class="title-3">
               Can you work across the frontend and backend?<span
                 class="faq-toggle"
@@ -900,7 +958,7 @@
               including customer applications and administration tools.
             </p>
           </details>
-          <details class="reveal">
+          <details class="reveal" id="detail-cloud" tabindex="-1">
             <summary class="title-3">
               What is your cloud experience?<span
                 class="faq-toggle"
@@ -913,7 +971,7 @@
               PostgreSQL, DynamoDB, Redshift, BigQuery, and other data stores.
             </p>
           </details>
-          <details class="reveal">
+          <details class="reveal" id="detail-location" tabindex="-1">
             <summary class="title-3">
               Where are you based?<span
                 class="faq-toggle"
@@ -926,7 +984,7 @@
               together.
             </p>
           </details>
-          <details class="reveal">
+          <details class="reveal" id="detail-education" tabindex="-1">
             <summary class="title-3">
               What is your educational background?<span
                 class="faq-toggle"
@@ -944,7 +1002,7 @@
               </p>
             </div>
           </details>
-          <details class="reveal">
+          <details class="reveal" id="detail-background" tabindex="-1">
             <summary class="title-3">
               Where can I see your full background?<span
                 class="faq-toggle"

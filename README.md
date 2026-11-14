@@ -32,7 +32,7 @@ CSS and JavaScript URLs include `?v=` followed by the first 12 characters of the
 
 - [index.html](./index.html): introduction, contact links, employer panels, side projects, and reusable SVG system diagrams.
 - [styles.css](./styles.css): layout, typography, colors, responsive behavior, and self-hosted font definitions.
-- [script.js](./script.js): lightweight page interactions.
+- [script.js](./script.js): section navigation, active-link tracking, and reveal animations.
 - [systems.css](./systems.css) and [systems.js](./systems.js): nested experience panels and diagram motion controls.
 - [assets/](./assets/): supplied portrait, company logos, social icons, font files, favicon, and social preview artwork.
 - [privacy.html](./privacy.html), [terms.html](./terms.html), and [404.html](./404.html): supporting pages.
@@ -40,6 +40,8 @@ CSS and JavaScript URLs include `?v=` followed by the first 12 characters of the
 The site uses warm cream `#f5f3ee`, dark `#191b19`, and orange `#b94721`. Keep the canonical URL and sharing metadata aligned with the live address if the domain changes.
 
 The avatar, greeting, role, and labelled contact links form a centered profile header. Introduction is the first content section; its copy, Experience, Side projects, and useful details share the same content edges. Employer descriptions use native disclosures, including two nested roles at Neon.AI. Diagrams animate briefly on load and when a role opens, then settle within 4.3 seconds; reduced motion preferences show static diagrams. Education is in the useful details section. Contact links and experience descriptions remain accessible without JavaScript.
+
+The left navigation includes nested links to roles, projects, and useful details. It stays fixed on wide screens and becomes a Sections disclosure on smaller screens. Selecting a nested link opens its parent entries; the current link follows scrolling, and browser history remains available.
 
 Longevity, AI Interview Buddy, and Genkit appear in the side-projects section using the same native disclosures. Genkit lists the role as open-source contributor, with links to merged pull requests. The Longevity and AI Interview Buddy descriptions are based on the supplied local repositories; they do not claim product usage or commercial results.
 
