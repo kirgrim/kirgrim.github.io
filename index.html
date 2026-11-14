@@ -666,128 +666,6 @@
           </text>
         </g>
       </symbol>
-
-      <symbol id="system-monolith" viewBox="0 0 600 400">
-        <text class="map-boundary-label" x="300" y="24" text-anchor="middle">
-          Before service migration
-        </text>
-        <rect
-          class="map-boundary"
-          x="206"
-          y="46"
-          width="220"
-          height="318"
-          rx="12"
-        />
-        <text class="map-boundary-label" x="226" y="74">
-          Legacy application
-        </text>
-        <path
-          class="map-edge"
-          d="M168 122H236"
-          marker-end="url(#system-arrow)"
-        />
-        <path
-          class="map-edge"
-          d="M316 148V188"
-          marker-end="url(#system-arrow)"
-        />
-        <path
-          class="map-edge"
-          d="M316 240V280"
-          marker-end="url(#system-arrow)"
-        />
-        <path
-          class="map-edge"
-          d="M396 306H464"
-          marker-end="url(#system-arrow)"
-        />
-        <circle
-          class="map-packet"
-          cx="178"
-          cy="122"
-          r="3"
-          style="--flow-x: 44px; --flow-y: 0px; --flow-delay: 0ms"
-        />
-        <circle
-          class="map-packet"
-          cx="316"
-          cy="156"
-          r="3"
-          style="--flow-x: 0px; --flow-y: 20px; --flow-delay: 600ms"
-        />
-        <circle
-          class="map-packet"
-          cx="316"
-          cy="248"
-          r="3"
-          style="--flow-x: 0px; --flow-y: 20px; --flow-delay: 1200ms"
-        />
-        <circle
-          class="map-packet"
-          cx="408"
-          cy="306"
-          r="3"
-          style="--flow-x: 42px; --flow-y: 0px; --flow-delay: 1800ms"
-        />
-        <g class="map-node map-client">
-          <rect class="map-box" x="20" y="90" width="148" height="64" rx="8" />
-          <text class="map-label" x="94" y="117" text-anchor="middle">
-            Client
-          </text>
-          <text class="map-sublabel" x="94" y="138" text-anchor="middle">
-            Application UI
-          </text>
-        </g>
-        <g class="map-node map-service">
-          <rect class="map-box" x="236" y="96" width="160" height="52" rx="8" />
-          <text class="map-label" x="316" y="127" text-anchor="middle">
-            API
-          </text>
-        </g>
-        <g class="map-node map-service">
-          <rect
-            class="map-box"
-            x="236"
-            y="188"
-            width="160"
-            height="52"
-            rx="8"
-          />
-          <text class="map-label" x="316" y="219" text-anchor="middle">
-            Domain logic
-          </text>
-        </g>
-        <g class="map-node map-service">
-          <rect
-            class="map-box"
-            x="236"
-            y="280"
-            width="160"
-            height="52"
-            rx="8"
-          />
-          <text class="map-label" x="316" y="311" text-anchor="middle">
-            Data access
-          </text>
-        </g>
-        <g class="map-node map-store">
-          <rect
-            class="map-box"
-            x="464"
-            y="274"
-            width="116"
-            height="64"
-            rx="8"
-          />
-          <text class="map-label" x="522" y="301" text-anchor="middle">
-            Database
-          </text>
-          <text class="map-sublabel" x="522" y="322" text-anchor="middle">
-            Persistence
-          </text>
-        </g>
-      </symbol>
     </svg>
 
     <header class="site-header">
@@ -800,7 +678,6 @@
         ><span class="brand-name">Kyrylo Hrymailo</span></a
       >
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a class="title-4" href="#work">Architectures</a>
         <a class="title-4" href="#experience">Experience</a>
         <a class="title-4" href="#about">About</a>
       </nav>
@@ -833,7 +710,6 @@
         </button>
       </div>
       <nav aria-label="Mobile navigation">
-        <a class="heading-3" href="#work">Architectures</a>
         <a class="heading-3" href="#experience">Experience</a>
         <a class="heading-3" href="#about">About me</a>
         <a class="heading-3" href="mailto:kirill.grim@gmail.com"
@@ -858,441 +734,61 @@
               class="hero-avatar"
               src="./assets/avatar.jpg"
               alt="Portrait of Kyrylo Hrymailo"
-              width="80"
-              height="80"
+              width="96"
+              height="96"
               fetchpriority="high"
             />
-            <div>
-              <p class="title-1">Hi, I’m Kyrylo.</p>
+            <div class="hero-title">
+              <h1 id="hero-heading" class="heading-1">
+                Hi, I’m Kyrylo<span class="accent">.</span>
+              </h1>
               <p class="hero-role caption-2">
-                Lead software engineer<br />Warsaw, Poland
+                Lead software engineer · Warsaw, Poland
               </p>
             </div>
-          </div>
-          <h1 id="hero-heading" class="heading-1">
-            From complexity<br />to working products<span class="accent"
-              >.</span
-            >
-          </h1>
-          <p class="hero-description body-3">
-            I build Python platforms, connect distributed systems, and lead
-            teams from the first technical decision to production.
-          </p>
-          <a
-            class="button button-accent button-md"
-            href="mailto:kirill.grim@gmail.com"
-            >Let’s talk
-            <svg class="icon" aria-hidden="true">
-              <use href="#arrow-up-right" /></svg
-          ></a>
-          <div class="hero-proof">
-            <p class="caption-1">Engineering since <strong>2018</strong></p>
-            <span aria-hidden="true">/</span>
-            <p class="caption-1">Led a team of <strong>up to 5</strong></p>
-          </div>
-        </div>
-        <div
-          class="engineering-visual"
-          role="img"
-          aria-label="An engineering sketch connecting product requirements to Python services, data, cloud infrastructure, and a working product."
-        >
-          <div class="visual-topline caption-4">
-            <span><span class="status-dot"></span> The engineering view</span
-            ><span>Fig. 01</span>
-          </div>
-          <svg class="system-drawing" viewBox="0 0 440 380" aria-hidden="true">
-            <defs>
-              <pattern
-                id="dots"
-                width="24"
-                height="24"
-                patternUnits="userSpaceOnUse"
+            <nav class="intro-contacts" aria-label="Contact and profile links">
+              <a
+                class="button button-accent button-sm"
+                href="mailto:kirill.grim@gmail.com"
+                >Email</a
               >
-                <circle cx="12" cy="12" r="1" fill="#ccd1c8" />
-              </pattern>
-            </defs>
-            <rect width="440" height="380" fill="url(#dots)" />
-            <g fill="none" stroke="#9aa394" stroke-width="1.5">
-              <path
-                d="M220 83v44M220 231v38M111 189H64v109h72M329 189h47V81h-65"
-              />
-              <path
-                d="m215 119 5 8 5-8m-10 142 5 8 5-8m-97 32 8 5-8 5m191-227-8 5 8 5"
-              />
-            </g>
-            <rect
-              x="128"
-              y="35"
-              width="184"
-              height="48"
-              rx="8"
-              fill="#f5f3ee"
-              stroke="#bdc5b8"
-            />
-            <text
-              x="220"
-              y="65"
-              text-anchor="middle"
-              class="caption-3"
-              fill="#59614f"
-            >
-              A real product problem
-            </text>
-            <rect
-              x="104"
-              y="135"
-              width="232"
-              height="104"
-              rx="16"
-              fill="#dde4d6"
-              stroke="#a7b29c"
-            />
-            <rect
-              x="120"
-              y="151"
-              width="40"
-              height="40"
-              rx="8"
-              fill="#f5f3ee"
-            />
-            <path
-              d="m136 163-8 8 8 8m8-16 8 8-8 8"
-              fill="none"
-              stroke="#526546"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <text x="172" y="169" class="title-3" fill="#26341e">
-              Build the system
-            </text>
-            <text x="172" y="190" class="caption-2" fill="#46563c">
-              Python · APIs · Data
-            </text>
-            <path d="M120 211h200" stroke="#a7b29c" />
-            <circle cx="126" cy="223" r="3" fill="#526546" />
-            <text x="137" y="227" class="caption-5" fill="#46563c">
-              Tested. Observable. Maintainable.
-            </text>
-            <rect
-              x="136"
-              y="277"
-              width="168"
-              height="56"
-              rx="8"
-              fill="#191b19"
-            />
-            <circle cx="157" cy="305" r="4" fill="#f0bc9f" />
-            <text x="173" y="310" class="caption-3" fill="#ffffff">
-              A working product
-            </text>
-            <rect
-              x="16"
-              y="275"
-              width="88"
-              height="32"
-              rx="6"
-              fill="#f5f3ee"
-              stroke="#bdc5b8"
-            />
-            <text
-              x="60"
-              y="295"
-              text-anchor="middle"
-              class="caption-4"
-              fill="#59614f"
-            >
-              Cloud
-            </text>
-            <rect
-              x="333"
-              y="65"
-              width="88"
-              height="32"
-              rx="6"
-              fill="#f5f3ee"
-              stroke="#bdc5b8"
-            />
-            <text
-              x="377"
-              y="85"
-              text-anchor="middle"
-              class="caption-4"
-              fill="#59614f"
-            >
-              Feedback
-            </text>
-          </svg>
-          <div class="visual-bottomline caption-4">
-            <span>Clarity in the design.</span
-            ><span>Care in the details. <span class="accent">↗</span></span>
+              <a
+                class="title-4"
+                href="https://www.linkedin.com/in/kyrylo-hrymailo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="title-4"
+                href="https://github.com/kirgrim"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="title-4"
+                href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read CV</a
+              >
+            </nav>
           </div>
-        </div>
-      </section>
-
-      <section
-        id="work"
-        tabindex="-1"
-        class="architecture-section section-space"
-        aria-labelledby="work-heading"
-      >
-        <div class="section-shell">
-          <div class="section-heading section-heading-split reveal">
-            <div>
-              <p class="eyebrow caption-3">System design in practice</p>
-              <h2 id="work-heading" class="heading-2">
-                Architectures I’ve<br />worked with.
-              </h2>
-            </div>
-            <p class="body-3 section-note">
-              Explore an architecture, then open the experience behind it.
+          <div class="hero-description">
+            <p class="body-7">
+              I build Python platforms, distributed services, and cloud
+              infrastructure. Since 2018, I’ve worked across conversational AI,
+              diamond traceability, cloud cost optimization, and live gaming.
+            </p>
+            <p class="body-7">
+              I combine hands on development with technical leadership. I’ve led
+              a team of up to five developers, staying involved from
+              requirements and architecture through testing, delivery, and
+              production.
             </p>
           </div>
-          <div
-            class="architecture-carousel"
-            role="region"
-            aria-roledescription="carousel"
-            aria-label="System design architectures"
-          >
-            <div class="architecture-controls" hidden>
-              <div
-                class="architecture-tabs"
-                role="group"
-                aria-label="Choose architecture"
-              >
-                <button
-                  class="architecture-tab title-4"
-                  type="button"
-                  data-slide="0"
-                  aria-current="true"
-                >
-                  ETL</button
-                ><button
-                  class="architecture-tab title-4"
-                  type="button"
-                  data-slide="1"
-                >
-                  Kubernetes</button
-                ><button
-                  class="architecture-tab title-4"
-                  type="button"
-                  data-slide="2"
-                >
-                  Serverless</button
-                ><button
-                  class="architecture-tab title-4"
-                  type="button"
-                  data-slide="3"
-                >
-                  Monolith
-                </button>
-              </div>
-              <div class="carousel-actions">
-                <button
-                  class="carousel-prev carousel-arrow"
-                  type="button"
-                  aria-label="Previous architecture"
-                >
-                  <svg class="icon" aria-hidden="true">
-                    <use href="#arrow-right" />
-                  </svg>
-                </button>
-                <p
-                  class="carousel-status caption-1"
-                  aria-live="polite"
-                  aria-atomic="true"
-                >
-                  1 of 4
-                </p>
-                <button
-                  class="carousel-next carousel-arrow"
-                  type="button"
-                  aria-label="Next architecture"
-                >
-                  <svg class="icon" aria-hidden="true">
-                    <use href="#arrow-right" />
-                  </svg></button
-                ><button
-                  class="motion-toggle button-sm"
-                  type="button"
-                  hidden
-                  aria-pressed="false"
-                >
-                  Pause diagram motion
-                </button>
-              </div>
-            </div>
-            <div
-              class="architecture-track"
-              tabindex="0"
-              aria-label="Architecture slides"
-            >
-              <article
-                class="architecture-slide"
-                id="architecture-etl"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="1 of 4: ETL"
-              >
-                <div class="architecture-copy">
-                  <p class="eyebrow caption-3">Complexio · Data integration</p>
-                  <h3 class="heading-4">Many sources. A useful data flow.</h3>
-                  <p class="body-3">
-                    Bringing data from different sources into an AI automation
-                    platform, with ingestion and transformation between source
-                    systems and product workflows.
-                  </p>
-                  <a class="text-link button-md" href="#job-complexio"
-                    >Explore this experience
-                    <svg class="icon" aria-hidden="true">
-                      <use href="#arrow-up-right" /></svg
-                  ></a>
-                </div>
-                <figure class="architecture-figure diagram-panel">
-                  <svg
-                    class="system-map"
-                    viewBox="0 0 600 400"
-                    role="img"
-                    aria-label="Different data sources feed an ETL pipeline, which supplies an AI automation platform."
-                  >
-                    <use href="#system-complexio" />
-                  </svg>
-                  <figcaption class="caption-2">
-                    Sources → ETL → AI automation platform
-                  </figcaption>
-                </figure>
-              </article>
-              <article
-                class="architecture-slide"
-                id="architecture-kubernetes"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="2 of 4: Kubernetes"
-              >
-                <div class="architecture-copy">
-                  <p class="eyebrow caption-3">Neon.AI · Conversational AI</p>
-                  <h3 class="heading-4">Many services. One platform.</h3>
-                  <p class="body-3">
-                    A Kubernetes cluster runs conversational interfaces, chatbot
-                    services, the Neon System, and speech services. AMQP
-                    messaging connects the services across the ecosystem.
-                  </p>
-                  <a class="text-link button-md" href="#job-neon"
-                    >Explore this experience
-                    <svg class="icon" aria-hidden="true">
-                      <use href="#arrow-up-right" /></svg
-                  ></a>
-                </div>
-                <figure class="architecture-figure diagram-panel">
-                  <svg
-                    class="system-map"
-                    viewBox="0 0 600 400"
-                    role="img"
-                    aria-label="Chatbots, conversational website, Neon System, and TTS and STT services communicate through messaging inside a Kubernetes cluster."
-                  >
-                    <use href="#system-neon" />
-                  </svg>
-                  <figcaption class="caption-2">
-                    Conversational interfaces → messaging → speech services
-                  </figcaption>
-                </figure>
-              </article>
-              <article
-                class="architecture-slide"
-                id="architecture-serverless"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="3 of 4: Serverless"
-              >
-                <div class="architecture-copy">
-                  <p class="eyebrow caption-3">
-                    Tripledot Studios · Real time gaming
-                  </p>
-                  <h3 class="heading-4">Real time play, backed by Lambda.</h3>
-                  <p class="body-3">
-                    A Unity client communicates with AWS Lambda services through
-                    Protobuf messages. The backend combines real time game
-                    services, persistent state, and the tooling needed to run
-                    LiveOps.
-                  </p>
-                  <a class="text-link button-md" href="#job-tripledot"
-                    >Explore this experience
-                    <svg class="icon" aria-hidden="true">
-                      <use href="#arrow-up-right" /></svg
-                  ></a>
-                </div>
-                <figure class="architecture-figure diagram-panel">
-                  <svg
-                    class="system-map"
-                    viewBox="0 0 600 400"
-                    role="img"
-                    aria-label="A Unity game client communicates through Protobuf with AWS Lambda real time services, backed by DynamoDB."
-                  >
-                    <use href="#system-tripledot" />
-                  </svg>
-                  <figcaption class="caption-2">
-                    Unity client ↔ Protobuf ↔ AWS Lambda services
-                  </figcaption>
-                </figure>
-              </article>
-              <article
-                class="architecture-slide"
-                id="architecture-monolith"
-                role="group"
-                aria-roledescription="slide"
-                aria-label="4 of 4: Monolith"
-              >
-                <div class="architecture-copy">
-                  <p class="eyebrow caption-3">
-                    Complexio · Architecture evolution
-                  </p>
-                  <h3 class="heading-4">
-                    Understand the whole. Find the seams.
-                  </h3>
-                  <p class="body-3">
-                    At Complexio, I migrated legacy application code toward
-                    services and asynchronous PostgreSQL and Neo4j access. That
-                    work required tracing the API, business logic, and
-                    persistence inside the original application.
-                  </p>
-                  <a class="text-link button-md" href="#job-complexio"
-                    >Explore this experience
-                    <svg class="icon" aria-hidden="true">
-                      <use href="#arrow-up-right" /></svg
-                  ></a>
-                </div>
-                <figure class="architecture-figure diagram-panel">
-                  <svg
-                    class="system-map"
-                    viewBox="0 0 600 400"
-                    role="img"
-                    aria-label="Before the service migration, a client connects to one application containing API, business logic, and data access, backed by a database."
-                  >
-                    <use href="#system-monolith" />
-                  </svg>
-                  <figcaption class="caption-2">
-                    A view of the legacy application before service migration
-                  </figcaption>
-                </figure>
-              </article>
-            </div>
-          </div>
         </div>
-      </section>
-
-      <section
-        class="tagline-section section-shell section-space"
-        aria-labelledby="tagline-heading"
-      >
-        <p class="eyebrow caption-3">How I think about the work</p>
-        <h2 id="tagline-heading" class="heading-1 tagline">
-          Make the complex clear.<br />Build with care.<br />Keep the product
-          moving.
-        </h2>
-        <p class="body-3 tagline-note">
-          Good engineering connects the architecture to the people who build it,
-          operate it, and use it.
-        </p>
       </section>
 
       <section
@@ -1308,15 +804,24 @@
               A closer look at the work.
             </h2>
           </div>
-          <a
-            class="text-link button-md"
-            href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Read my full CV
-            <svg class="icon" aria-hidden="true">
-              <use href="#arrow-up-right" /></svg
-          ></a>
+          <div class="experience-controls">
+            <a
+              class="text-link button-md"
+              href="https://docs.google.com/document/d/1_F3qWAOfORrzUjzwwY0-BK2xuSJIb6Kf/edit"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read my full CV
+              <svg class="icon" aria-hidden="true">
+                <use href="#arrow-up-right" /></svg></a
+            ><button
+              class="motion-toggle button-sm"
+              type="button"
+              hidden
+              aria-pressed="false"
+            >
+              Pause diagram motion
+            </button>
+          </div>
         </div>
         <p class="body-3 experience-hint">
           Expand an employer to explore my responsibilities and the system I
@@ -1676,6 +1181,21 @@
       </section>
 
       <section
+        class="tagline-section section-shell section-space"
+        aria-labelledby="tagline-heading"
+      >
+        <p class="eyebrow caption-3">How I think about the work</p>
+        <h2 id="tagline-heading" class="heading-1 tagline">
+          Make the complex clear.<br />Build with care.<br />Keep the product
+          moving.
+        </h2>
+        <p class="body-3 tagline-note">
+          Good engineering connects the architecture to the people who build it,
+          operate it, and use it.
+        </p>
+      </section>
+
+      <section
         id="about"
         tabindex="-1"
         class="about-section section-space"
@@ -1855,60 +1375,6 @@
           </details>
         </div>
       </section>
-
-      <section
-        id="contact"
-        tabindex="-1"
-        class="contact-section section-shell"
-        aria-labelledby="contact-heading"
-      >
-        <div class="contact-card reveal">
-          <p class="eyebrow caption-3">
-            <span class="status-dot"></span> The next good conversation
-          </p>
-          <h2 id="contact-heading" class="heading-2">What are you building?</h2>
-          <p class="body-3">
-            Have a challenging system, a product idea, or a team that needs
-            technical direction? Tell me a little about it.
-          </p>
-          <a
-            class="button button-accent button-md"
-            href="mailto:kirill.grim@gmail.com"
-            >Let’s talk
-            <svg class="icon" aria-hidden="true">
-              <use href="#arrow-up-right" /></svg></a
-          ><a
-            class="contact-email caption-1"
-            href="mailto:kirill.grim@gmail.com"
-            >kirill.grim@gmail.com</a
-          >
-          <p class="caption-2 contact-note">
-            A short email is a good place to start.
-          </p>
-        </div>
-      </section>
     </main>
-    <footer class="site-footer section-shell">
-      <div>
-        <a class="brand title-4" href="#intro"
-          ><span class="monogram">kh<span>.</span></span
-          ><span>Kyrylo Hrymailo</span></a
-        >
-        <p class="caption-2">Thoughtful engineering. Useful products.</p>
-      </div>
-      <div class="footer-links caption-1">
-        <a
-          href="https://www.linkedin.com/in/kyrylo-hrymailo"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn ↗</a
-        ><a
-          href="https://github.com/kirgrim"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub ↗</a
-        ><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a>
-      </div>
-    </footer>
   </body>
 </html>

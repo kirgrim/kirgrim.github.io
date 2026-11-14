@@ -1,36 +1,17 @@
-.architecture-section {
-  background: #ebece5;
-}
-.architecture-carousel,
-.architecture-slide,
-.architecture-copy,
 .experience-body > *,
 .career-roles {
   min-width: 0;
 }
-.architecture-controls {
+.experience-controls {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-300);
-  margin-bottom: var(--spacing-300);
+  gap: var(--spacing-200);
 }
-.architecture-controls[hidden],
-.motion-toggle[hidden] {
+.experience-controls .motion-toggle[hidden] {
   display: none;
 }
-.architecture-tabs,
-.carousel-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--spacing-75);
-}
-.architecture-tab,
-.carousel-prev,
-.carousel-next,
-.motion-toggle {
+.experience-controls .motion-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -47,82 +28,13 @@
     border-color 300ms var(--motion),
     color 300ms var(--motion);
 }
-.architecture-tab:hover,
-.carousel-prev:hover,
-.carousel-next:hover,
-.motion-toggle:hover {
-  background: var(--paper);
+.experience-controls .motion-toggle:hover {
+  background: var(--sage);
   border-color: var(--ink);
 }
-.architecture-tab[aria-current] {
-  background: var(--ink);
-  color: var(--paper);
-  border-color: var(--ink);
-}
-.carousel-prev,
-.carousel-next {
-  width: 44px;
-  padding: 0;
-  flex-shrink: 0;
-}
-.carousel-prev .icon {
-  transform: rotate(180deg);
-}
-.carousel-prev:disabled,
-.carousel-next:disabled {
-  opacity: 0.35;
-  cursor: default;
-  background: transparent;
-  border-color: #c9cec1;
-}
-.carousel-status {
-  min-width: 48px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 20px;
-}
-.motion-toggle {
-  margin-left: var(--spacing-75);
-}
-.architecture-track {
-  display: flex;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-color: #b9bfb0 transparent;
-  scrollbar-width: thin;
-  border-radius: 24px;
-}
-.architecture-track:focus-visible {
+.experience-controls .motion-toggle:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
-}
-.architecture-slide {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.2fr);
-  flex: 0 0 100%;
-  align-items: center;
-  gap: var(--spacing-400);
-  padding: var(--spacing-400);
-  border: 1px solid #d1d6c9;
-  border-radius: 24px;
-  background: var(--paper);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-.architecture-copy {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--spacing-200);
-}
-.architecture-copy > .body-3 {
-  color: var(--muted);
-}
-.architecture-copy .text-link {
-  margin-top: var(--spacing-100);
 }
 .diagram-panel {
   margin: 0;
@@ -354,18 +266,6 @@
   }
 }
 @media (max-width: 900px) {
-  .architecture-slide {
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--spacing-300);
-  }
-  .architecture-copy {
-    max-width: 600px;
-  }
-  .architecture-figure {
-    width: 100%;
-    max-width: 640px;
-    margin-inline: auto;
-  }
   .experience-body {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--spacing-300);
@@ -377,32 +277,6 @@
   }
 }
 @media (max-width: 720px) {
-  .architecture-controls {
-    align-items: stretch;
-    flex-direction: column;
-    gap: var(--spacing-200);
-  }
-  .architecture-tabs {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .carousel-actions {
-    display: grid;
-    grid-template-columns: 44px minmax(48px, 1fr) 44px;
-  }
-  .motion-toggle {
-    grid-column: 1 / -1;
-    justify-self: start;
-    margin-left: 0;
-    margin-top: var(--spacing-75);
-  }
-  .architecture-slide {
-    padding: var(--spacing-200);
-    border-radius: 16px;
-  }
-  .architecture-track {
-    border-radius: 16px;
-  }
   .experience-summary,
   .experience-body,
   .career-roles {
@@ -418,9 +292,6 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .architecture-track {
-    scroll-behavior: auto;
-  }
   .map-packet {
     display: none;
   }

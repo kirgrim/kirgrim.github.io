@@ -51,7 +51,7 @@ if ("IntersectionObserver" in window) {
     { rootMargin: "-15% 0px -60% 0px" },
   );
   document
-    .querySelectorAll("#intro, #work, #experience, #about, #contact")
+    .querySelectorAll("#intro, #experience, #about")
     .forEach((section) => navObserver.observe(section));
 
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
